@@ -1,0 +1,39 @@
+[submodule "third_party/fmt"]
+	path = third_party/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "third_party/googletest"]
+	path = third_party/googletest
+	url = https://github.com/google/googletest.git
+[submodule "third_party/benchmark"]
+	path = third_party/benchmark
+	url = https://github.com/google/benchmark.git
+[submodule "mllm/backends/cpu/vendors/kleidiai"]
+	path = mllm/backends/cpu/vendors/kleidiai
+	url = https://git.gitlab.arm.com/kleidi/kleidiai.git
+[submodule "mllm/backends/cuda/vendors/cccl"]
+	path = mllm/backends/cuda/vendors/cccl
+	url = https://github.com/NVIDIA/cccl.git
+	update = none
+[submodule "mllm/backends/cuda/vendors/cutlass"]
+	path = mllm/backends/cuda/vendors/cutlass
+	url = https://github.com/NVIDIA/cutlass.git
+	update = none
+[submodule "mllm/ffi/vendors/tvm-ffi"]
+	path = mllm/ffi/vendors/tvm-ffi
+	url = https://github.com/apache/tvm-ffi
+[submodule "mllm/ext/vendors/llvm-project"]
+	path = mllm/ext/vendors/llvm-project
+	url = https://github.com/llvm/llvm-project
+	update = none
+[submodule "mllm/ext/vendors/tokenizers"]
+	path = mllm/ext/vendors/tokenizers
+	url = https://github.com/meta-pytorch/tokenizers.git
+	update = none
+[submodule "mllm-chat"]
+	path = mllm-chat
+	url = https://github.com/UbiquitousLearning/mllm-chat
+	update = none
+[submodule "mllm/backends/ascend/vendors/catlass"]
+	path = mllm/backends/ascend/vendors/catlass
+	url = https://gitcode.com/cann/catlass.git
+	update = none

@@ -1,0 +1,8 @@
+{
+  "project": {
+    "app": {
+      "compileType": "debug",
+      "profile": "default"
+    }
+  }
+}

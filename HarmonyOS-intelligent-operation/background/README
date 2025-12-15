@@ -1,0 +1,21 @@
+# monitor_data/httpServer
+Flask web serverto return system information including: CPU, memory, net and disk......
+
+## Description
+----------------------------------
+GetRequest.py: Flask app file
+ReturnData.py: Source function file
+----------------------------------
+
+## Install
+----------------------------------
+python environment 
+pip install flask gunicorn supervisor
+----------------------------------
+
+## Run
+----------------------------------
+Test mdoe: python GetRequest.py
+Gunicorn: gunicorn -w [worker_params] -b [ip_params:port_params] app:GetRequest
+Supervisor: supervisorctl -c /etc/supervisord.conf start monitor_data 
+----------------------------------

@@ -1,0 +1,40 @@
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.cache/
+.tmp/
+compile_commands.json
+
+# MLLM Team Specific
+tasks/mllmteam*
+
+.DS_Store
+
+# Building files and binary
+build*/
+install*/
+mllm-sdk-*/
+
+# Pymllm related
+stubs/
+py-build-out/
+pymllm.egg-info/
+_C.cpython-*.so
+dist/
+
+# Python related
+__pycache__/
+
+# Not Released
+rsmllm/
+
+
+# Tilelang log
+autotuner.log
+# Python virtual environment
+.venv/
+
+# Downloaded models and build artifacts (root-only)
+/models/
+# Keep source model adapters tracked
+!tools/mllm-llm-benchmark/models/

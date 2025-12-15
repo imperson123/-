@@ -1,0 +1,50 @@
+[2025-12-15 12:43:10] [ERROR] [Flask] 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+System: {
+  "os": "Windows",
+  "os_version": "10.0.26100",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "cpu_count": 16,
+  "memory_total": 16438382592,
+  "hostname": "\u90d1\u674e\u60e0\u6770\u7684\u7535\u8111"
+}
+--------------------------------------------------------------------------------
+[2025-12-15 12:53:32] [ERROR] [Flask] 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\ZLHJ2\OneDrive\Desktop\HarmonyOS-intelligent-operation\.venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+System: {
+  "os": "Windows",
+  "os_version": "10.0.26100",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "cpu_count": 16,
+  "memory_total": 16438382592,
+  "hostname": "\u90d1\u674e\u60e0\u6770\u7684\u7535\u8111"
+}
+--------------------------------------------------------------------------------

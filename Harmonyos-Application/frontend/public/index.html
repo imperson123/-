@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minimal LLM Chat</title>
+  <style>
+    /* 全局填充背景，移除白边 */
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #191a1a;
+    }
+    body { font-family: Arial, Helvetica, sans-serif; color: #e6eef6; }
+    #messages { border:1px solid rgba(255,255,255,0.06); padding:10px; height:60vh; overflow:auto; background: rgba(255,255,255,0.02); border-radius:8px }
+    .msg { margin:8px 0; }
+    .user { text-align:right; }
+    .assistant { text-align:left; }
+    .bubble { display:inline-block; padding:8px 12px; border-radius:12px; max-width:78%; }
+    .user .bubble { background:#0b93f6; color:white }
+    .assistant .bubble { background: rgba(255,255,255,0.06); color: #e6eef6 }
+    #composer { margin-top:12px; display:flex; gap:8px }
+    #input { flex:1; padding:10px; font-size:14px }
+    button { padding:10px 14px }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-stack">
+      <div class="header-row">
+        <button class="title-btn" aria-label="鸿蒙玲珑核"><span>鸿蒙玲珑核</span></button>
+        <div class="heart-container" title="Like">
+          <input type="checkbox" class="checkbox" id="Give-It-An-Id">
+          <div class="svg-container">
+            <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
+            </svg>
+            <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="10,10 20,20"></polygon>
+              <polygon points="10,50 20,50"></polygon>
+              <polygon points="20,80 30,70"></polygon>
+              <polygon points="90,10 80,20"></polygon>
+              <polygon points="90,50 80,50"></polygon>
+              <polygon points="80,80 70,70"></polygon>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- 圣诞树放置在左上区域 -->
+      <div class="xmas-layer" aria-hidden="true">
+        <div class="xmas-slot">
+          <div class="xmas-tree">
+            <div class="branch" style="--x:0">
+              <span style="--i:0;"></span>
+              <span style="--i:1;"></span>
+              <span style="--i:2;"></span>
+              <span style="--i:3;"></span>
+            </div>
+            <div class="branch" style="--x:1">
+              <span style="--i:0;"></span>
+              <span style="--i:1;"></span>
+              <span style="--i:2;"></span>
+              <span style="--i:3;"></span>
+            </div>
+            <div class="branch" style="--x:2">
+              <span style="--i:0;"></span>
+              <span style="--i:1;"></span>
+              <span style="--i:2;"></span>
+              <span style="--i:3;"></span>
+            </div>
+            <div class="branch" style="--x:3">
+              <span style="--i:0;"></span>
+              <span style="--i:1;"></span>
+              <span style="--i:2;"></span>
+              <span style="--i:3;"></span>
+            </div>
+            <div class="stem">
+              <span style="--i:0;"></span>
+              <span style="--i:1;"></span>
+              <span style="--i:2;"></span>
+              <span style="--i:3;"></span>
+            </div>
+            <span class="shadow"></span>
+          </div>
+        </div>
+      </div>
+      <div id="messages" aria-live="polite"></div>
+
+  <!-- loader (隐藏/显示通过 JS 控制) -->
+  <!-- From Uiverse.io by alexruix -->
+  <div id="global-loader" style="display:none;margin:12px 0;">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Nawsome loader removed -->
+
+  <!-- 新的聊天输入区域（科技风） -->
+  <div class="container_chat_bot">
+    <div class="container-chat-options">
+      <div class="chat">
+        <div class="chat-bot">
+          <textarea id="chat_bot" name="chat_bot" placeholder="请输入你的问题，按回车或点击发送"></textarea>
+        </div>
+        <div class="options">
+          <div class="btns-add">
+            <!-- theme switch from Uiverse by Galahhad -->
+            <label class="theme-switch">
+              <input type="checkbox" class="theme-switch__checkbox">
+              <div class="theme-switch__container">
+                <div class="theme-switch__clouds"></div>
+                <div class="theme-switch__stars-container">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path></svg>
+                </div>
+                <div class="theme-switch__circle-container">
+                  <div class="theme-switch__sun-moon-container">
+                    <div class="theme-switch__moon">
+                      <div class="theme-switch__spot"></div>
+                      <div class="theme-switch__spot"></div>
+                      <div class="theme-switch__spot"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+          <button class="btn-submit" title="发送">
+            <i>
+              <svg viewBox="0 0 512 512"><path fill="currentColor" d="M473 39.05a24 24 0 0 0-25.5-5.46L47.47 185h-.08a24 24 0 0 0 1 45.16l.41.13l137.3 58.63a16 16 0 0 0 15.54-3.59L422 80a7.07 7.07 0 0 1 10 10L226.66 310.26a16 16 0 0 0-3.59 15.54l58.65 137.38c.06.2.12.38.19.57c3.2 9.27 11.3 15.81 21.09 16.25h1a24.63 24.63 0 0 0 23-15.46L478.39 64.62A24 24 0 0 0 473 39.05"></path></svg>
+            </i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- /.main-stack -->
+
+  <style>
+    /* container background (From Uiverse.io by adamgiebl) */
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      --color: rgba(114, 114, 114, 0.3);
+      background-color: #191a1a;
+      background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+          linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+      background-size: 55px 55px;
+      padding: 12px 0 20px 0;
+      box-sizing: border-box;
+      display:flex;
+      justify-content:center;
+    }
+
+    .main-stack {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; /* 横向不强制居中 */
+      gap: 12px;
+      min-height: calc(100vh - 40px);
+      justify-content: center;
+      padding: 12px 24px;
+      box-sizing: border-box;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .header-tree .tree {
+      width: 60px;
+      height: 60px;
+    }
+
+    .header-tree {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* title button (From Uiverse.io by Yashwanthnaini) */
+    .title-btn {
+      border: none;
+      border-radius: 20px;
+      background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+      transition: all 1.5s ease;
+      font-family: 'Ropa Sans', sans-serif;
+      font-weight: bold;
+      letter-spacing: 0.05rem;
+      padding: 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    }
+
+    .title-btn span {
+      display: inline-block;
+      padding: 20px 60px;
+      font-size: 34px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(6px);
+      transition: 0.4s ease-in-out;
+      color: #fff;
+    }
+
+    .title-btn span:hover { backdrop-filter: blur(0px); color: #ffffff; }
+
+    /* base (dark, semi-transparent to show grid background) */
+    #messages { border:1px solid rgba(255,255,255,0.06); padding:10px; height:52vh; overflow:auto; background: rgba(255,255,255,0.02); border-radius:8px; max-width:1100px; margin:0 auto; }
+    .msg { margin:8px 0; }
+    .user { text-align:right; }
+    .assistant { text-align:left; }
+    .bubble { display:inline-block; padding:8px 12px; border-radius:12px; max-width:78%; }
+    .user .bubble { background:#0b93f6; color:white }
+    .assistant .bubble { background: rgba(255,255,255,0.06); color: #e6eef6 }
+
+    /* loader (alexruix) */
+    .loader {
+      position: relative;
+      width: 120px;
+      height: 90px;
+      margin: 0 auto;
+    }
+
+    .loader:before {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      left: 50px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: #2a9d8f;
+      animation: loading-bounce 0.5s ease-in-out infinite alternate;
+    }
+
+    .loader:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 7px;
+      width: 45px;
+      border-radius: 4px;
+      box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+      animation: loading-step 1s ease-in-out infinite;
+    }
+
+    @keyframes loading-bounce {
+      0% { transform: scale(1, 0.7); }
+      40% { transform: scale(0.8, 1.2); }
+      60% { transform: scale(1, 1); }
+      100% { bottom: 140px; }
+    }
+
+    @keyframes loading-step {
+      0% { box-shadow: 0 10px 0 rgba(0, 0, 0, 0), 0 10px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 90px 0 #f2f2f2; }
+      100% { box-shadow: 0 10px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 90px 0 #f2f2f2, -70px 90px 0 rgba(0, 0, 0, 0); }
+    }
+
+    /* container_chat_bot (Cobp) simplified */
+    .container_chat_bot { display:flex; flex-direction:column; max-width:1100px; width:100%; gap:12px; margin:12px auto 0 auto }
+    .container-chat-options { position:relative; display:flex; background:linear-gradient(to bottom right,#7e7e7e,#363636); border-radius:12px; padding:10px; overflow:hidden; margin-top:-20px }
+    .chat { display:flex; flex-direction:column; width:100%; background:rgba(0,0,0,0.5); border-radius:10px; padding:10px }
+    .chat-bot textarea { background-color:transparent; border-radius:8px; border:none; width:100%; height:70px; color:#fff; font-family:sans-serif; font-size:14px; padding:12px; resize:none; outline:none }
+    .chat .options { display:flex; justify-content:space-between; align-items:flex-end; padding:8px 0 0 0 }
+    .btns-add { display:flex; gap:8px }
+    .btns-add .theme-switch { --toggle-size:20px }
+    .btn-submit { display:flex; padding:6px; background-image:linear-gradient(to top,#292929,#555,#292929); border-radius:10px; cursor:pointer; border:none; color:#fff }
+    .btn-submit i { width:30px;height:30px; display:flex; align-items:center; justify-content:center }
+    .tags { display:flex; gap:8px; color:#fff; font-size:12px }
+
+    /* theme-switch (Galahhad) core styles (only necessary parts) */
+    .theme-switch { --toggle-size: 22px; }
+    /* move theme-switch to fixed bottom-left and enlarge */
+    /* theme-switch (Galahhad) enlarged */
+    .theme-switch {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      z-index:1000;
+      --toggle-size: 42px;
+      --container-width: 6.5em;
+      --container-height: 3em;
+      --container-radius: 7em;
+      --circle-container-diameter: 4em;
+      --sun-moon-diameter: 2.5em;
+      --circle-container-offset: calc((var(--circle-container-diameter) - var(--container-height)) / 2 * -1);
+      --container-light-bg: #3D7EAE;
+      --container-night-bg: #1D1F2C;
+      --stars-color: #fff;
+      --clouds-color: #F3FDFF;
+      --back-clouds-color: #AACADF;
+      --spot-color: #959DB1;
+      --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);
+      --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
+    }
+
+    .theme-switch, .theme-switch *, .theme-switch *::before, .theme-switch *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-size: var(--toggle-size);
+    }
+
+    .theme-switch__container {
+      width: var(--container-width);
+      height: var(--container-height);
+      background-color: var(--container-light-bg);
+      border-radius: var(--container-radius);
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0em -0.062em 0.062em rgba(0, 0, 0, 0.25), 0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .theme-switch__container::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      box-shadow: 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset, 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset;
+      border-radius: var(--container-radius)
+    }
+
+    .theme-switch__checkbox { display: none; }
+
+    .theme-switch__circle-container {
+      width: var(--circle-container-diameter);
+      height: var(--circle-container-diameter);
+      background-color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      left: var(--circle-container-offset);
+      top: var(--circle-container-offset);
+      border-radius: var(--container-radius);
+      box-shadow: inset 0 0 0 3.375em rgba(255, 255, 255, 0.1), inset 0 0 0 3.375em rgba(255, 255, 255, 0.1), 0 0 0 0.625em rgba(255, 255, 255, 0.1), 0 0 0 1.25em rgba(255, 255, 255, 0.1);
+      display: flex;
+      transition: var(--circle-transition);
+      pointer-events: none;
+    }
+
+    .theme-switch__sun-moon-container {
+      pointer-events: auto;
+      position: relative;
+      z-index: 2;
+      width: var(--sun-moon-diameter);
+      height: var(--sun-moon-diameter);
+      margin: auto;
+      border-radius: var(--container-radius);
+      background-color: #ECCA2F;
+      box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset, 0em -0.062em 0.062em 0em #a1872a inset;
+      filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25)) drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .theme-switch__moon {
+      transform: translateX(100%);
+      width: 100%;
+      height: 100%;
+      background-color: #C4C9D1;
+      border-radius: inherit;
+      box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset, 0em -0.062em 0.062em 0em #969696 inset;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .theme-switch__spot {
+      position: absolute;
+      top: 0.75em;
+      left: 0.312em;
+      width: 0.75em;
+      height: 0.75em;
+      border-radius: var(--container-radius);
+      background-color: var(--spot-color);
+      box-shadow: 0em 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
+    }
+
+    .theme-switch__spot:nth-of-type(2) { width: 0.375em; height: 0.375em; top: 0.937em; left: 1.375em; }
+    .theme-switch__spot:nth-last-of-type(3) { width: 0.25em; height: 0.25em; top: 0.312em; left: 0.812em; }
+
+    .theme-switch__clouds {
+      width: 1.25em;
+      height: 1.25em;
+      background-color: var(--clouds-color);
+      border-radius: var(--container-radius);
+      position: absolute;
+      bottom: -0.625em;
+      left: 0.312em;
+      box-shadow: 0.937em 0.312em var(--clouds-color), -0.312em -0.312em var(--back-clouds-color), 1.437em 0.375em var(--clouds-color), 0.5em -0.125em var(--back-clouds-color), 2.187em 0 var(--clouds-color), 1.25em -0.062em var(--back-clouds-color), 2.937em 0.312em var(--clouds-color), 2em -0.312em var(--back-clouds-color), 3.625em -0.062em var(--clouds-color), 2.625em 0em var(--back-clouds-color), 4.5em -0.312em var(--clouds-color), 3.375em -0.437em var(--back-clouds-color), 4.625em -1.75em 0 0.437em var(--clouds-color), 4em -0.625em var(--back-clouds-color), 4.125em -2.125em 0 0.437em var(--back-clouds-color);
+      transition: 0.5s cubic-bezier(0, -0.02, 0.4, 1.25);
+    }
+
+    .theme-switch__stars-container {
+      position: absolute;
+      color: var(--stars-color);
+      top: -100%;
+      left: 0.312em;
+      width: 2.75em;
+      height: auto;
+      transition: var(--transition);
+    }
+
+    .theme-switch__checkbox:checked + .theme-switch__container { background-color: var(--container-night-bg); }
+    .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container {
+      left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter));
+    }
+    .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container:hover {
+      left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em)
+    }
+    .theme-switch__circle-container:hover { left: calc(var(--circle-container-offset) + 0.187em); }
+    .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__moon { transform: translate(0); }
+    .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__clouds { bottom: -4.062em; }
+    .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__stars-container { top: 50%; transform: translateY(-50%); }
+
+    /* Nawsome loader styles (re-added, moved slightly upward) */
+    /* loader visuals removed */
+
+    /* Glitch loading style (From Uiverse.io by andrew-demchenk0) */
+    .glitch-wrap { position: relative; width: 100%; display:flex; align-items:center; justify-content:center }
+    .glitch {
+      position: relative;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+      letter-spacing: 4px;
+      z-index: 1;
+      animation: shift 1s ease-in-out infinite alternate;
+    }
+
+    .glitch:before,
+    .glitch:after {
+      display: block;
+      content: attr(data-glitch);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+    }
+
+    .glitch:before {
+      animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+      color: #8b00ff;
+      z-index: -1;
+    }
+
+    .glitch:after {
+      animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+      color: #00e571;
+      z-index: -2;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-3px, 3px); }
+      40% { transform: translate(-3px, -3px); }
+      60% { transform: translate(3px, 3px); }
+      80% { transform: translate(3px, -3px); }
+      to { transform: translate(0); }
+    }
+
+    @keyframes shift {
+      0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% { transform: skewX(0deg); }
+      41% { transform: skewX(10deg); }
+      42% { transform: skewX(-10deg); }
+      59% { transform: skewX(40deg) skewY(10deg); }
+      60% { transform: skewX(-40deg) skewY(-10deg); }
+      63% { transform: skewX(10deg) skewY(-5deg); }
+      70% { transform: skewX(-50deg) skewY(-20deg); }
+      71% { transform: skewX(10deg) skewY(-10deg); }
+    }
+
+    /* 圣诞树 (NlghtM4re) 固定在左上区域 */
+    .xmas-layer {
+      position: relative;
+      width: 100%;
+      height: 0;
+      pointer-events: none;
+    }
+    .xmas-slot {
+      position: absolute;
+      left: 18%;
+      top: 80px;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .xmas-tree {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      transform-style: preserve-3d;
+      transform: rotateX(-20deg) rotateY(30deg);
+      animation: treeAnimate 5s linear infinite;
+    }
+    @keyframes treeAnimate {
+      0% { transform: rotateX(-20deg) rotateY(360deg); }
+      100% { transform: rotateX(-20deg) rotateY(0deg); }
+    }
+    .xmas-tree div {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: translateY(calc(25px * var(--x))) translateZ(0px);
+    }
+    .xmas-tree div.branch span {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(90deg, #69c069, #77dd77);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      border-bottom: 5px solid #00000019;
+      transform-origin: bottom;
+      transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(28.5px);
+    }
+    .xmas-tree div.stem span {
+      position: absolute; top: 110px; left: calc(50% - 7.5px); width: 15px; height: 50%;
+      background: linear-gradient(90deg, #bb4622, #df7214);
+      border-bottom: 5px solid #00000019;
+      transform-origin: bottom;
+      transform: rotateY(calc(90deg * var(--i))) translateZ(7.5px);
+    }
+    .xmas-tree .shadow {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      filter: blur(20px);
+      transform-style: preserve-3d;
+      transform: rotateX(90deg) translateZ(-65px);
+    }
+
+    /* Heart (catraco) */
+    .heart-container {
+      --heart-color: rgb(255, 91, 137);
+      position: relative;
+      width: 36px;
+      height: 36px;
+      transition: .3s;
+    }
+    .heart-container .checkbox {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 20;
+      cursor: pointer;
+    }
+    .heart-container .svg-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .heart-container .svg-outline,
+    .heart-container .svg-filled {
+      fill: var(--heart-color);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .heart-container .svg-filled {
+      animation: keyframes-svg-filled 1s;
+      display: none;
+    }
+    .heart-container .svg-celebrate {
+      position: absolute;
+      animation: keyframes-svg-celebrate .5s;
+      animation-fill-mode: forwards;
+      display: none;
+      stroke: var(--heart-color);
+      fill: var(--heart-color);
+      stroke-width: 2px;
+    }
+    .heart-container .checkbox:checked ~ .svg-container .svg-filled { display: block; }
+    .heart-container .checkbox:checked ~ .svg-container .svg-celebrate { display: block; }
+
+    @keyframes keyframes-svg-filled {
+      0% { transform: scale(0); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); filter: brightness(1.5); }
+    }
+    @keyframes keyframes-svg-celebrate {
+      0% { transform: scale(0); }
+      50% { opacity: 1; filter: brightness(1.5); }
+      100% { transform: scale(1.4); opacity: 0; display: none; }
+    }
+  </style>
+  </div> <!-- /.container -->
+  <script src="/app.js"></script>
+</body>
+</html>

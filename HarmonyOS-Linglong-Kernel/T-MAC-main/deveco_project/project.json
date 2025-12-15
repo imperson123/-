@@ -1,0 +1,7 @@
+{
+  "name": "tmac-deveco-wrapper",
+  "version": "1.0.0",
+  "type": "app",
+  "minSdkVersion": "1",
+  "description": "Wrapper project to open T-MAC in DevEco/Harmony Studio"
+}

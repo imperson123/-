@@ -1,0 +1,6 @@
+{
+  "minPlatformVersion": "1",
+  "appType": "app",
+  "projectType": "ohos",
+  "name": "tmac-deveco-wrapper"
+}

@@ -1,0 +1,57 @@
+{
+  "report_id": "HYDON-20251107224215",
+  "title": "数据故障修复报告",
+  "generated_at": "2025-11-07 22:42:15",
+  "metadata": {
+    "version": "1.0.0",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "os_type": "Windows",
+    "report_type": "Data Fault Repair NFT"
+  },
+  "system_info": {
+    "os": "Windows",
+    "os_version": "10.0.26100",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "cpu_count": 16,
+    "memory_total_gb": 15.31,
+    "hostname": "郑李惠杰的电脑",
+    "python_version": "3.10.11"
+  },
+  "error_statistics": {
+    "by_level": {},
+    "by_os": {},
+    "unresolved": 0,
+    "auto_fixed": 0,
+    "last_24h": 0
+  },
+  "recent_errors": [],
+  "auto_repair_summary": {
+    "total_errors": 0,
+    "auto_fixed_count": 0,
+    "manually_resolved": 0,
+    "pending_issues": 0,
+    "auto_fix_rate": "0%"
+  },
+  "deployment_info": {
+    "deployment_type": "轻量化部署",
+    "multi_os_support": true,
+    "supported_os": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Kylin"
+    ],
+    "auto_ops_enabled": true,
+    "lightweight": true
+  },
+  "nft_attributes": [
+    {
+      "trait_type": "系统状态",
+      "value": "完全健康"
+    },
+    {
+      "trait_type": "严重性",
+      "value": "无严重错误"
+    }
+  ]
+}

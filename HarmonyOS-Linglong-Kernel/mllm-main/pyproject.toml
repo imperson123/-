@@ -1,0 +1,72 @@
+[build-system]
+requires = [
+  "scikit-build-core==0.10.0", "apache-tvm-ffi"
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "pymllm"
+version = "2.0.2"
+description = "Fast and lightweight multimodal LLM inference engine for mobile and edge devices"
+readme = "README.md"
+authors = [
+  {name="chenghua.wang", email="chenghua.wang.edu@gmail.com"},
+# TODO contributors for pymllm
+]
+keywords = ["pymllm", "llm", "inference", "machine learning"]
+
+# Python dependencies
+requires-python = ">=3.10"
+dependencies=[
+  "packaging",
+  "pytest",
+  "pytest-html",
+  "apache-tvm-ffi == 0.1.0b4",
+  "pyyaml >= 6.0.2",
+  "openai",
+  "modelscope",
+  "fastapi",
+  "uvicorn",
+  "typer",
+]
+
+[project.optional-dependencies]
+cuda = ["tilelang"]
+
+[project.scripts]
+mllm-convertor = "pymllm.utils.mllm_convertor:main"
+mllm-service = "pymllm.service.tools:cli_app"
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.pyc"]
+
+[tool.usort]
+# Do not try to put "first-party" imports in their own section.
+first_party_detection = false
+
+[tool.black]
+target-version = ["py310", "py311", "py312"]
+
+[tool.scikit-build]
+# ABI-agnostic wheel
+wheel.py-api = "py3"
+cmake.args = [
+  "-DCMAKE_BUILD_TYPE=Release",
+  "-DMLLM_ENABLE_PY_MLLM=on"
+]
+minimum-version = "build-system.requires"
+
+# Build configuration
+build-dir = "build"
+build.verbose = true
+
+# CMake configuration
+cmake.version = "CMakeLists.txt"
+cmake.build-type = "RelWithDebugInfo"
+
+# Logging
+logging.level = "INFO"
+
+# Wheel configuration
+wheel.packages = ["pymllm"]
+wheel.install-dir = "pymllm"

@@ -1,0 +1,26 @@
+# Copyright (c) MLLM Team.
+# Licensed under the MIT License.
+
+Tasks:
+  - CMakeConfigTask:
+      cmake_cfg_path: "build-osx-accelerate"
+      cmake_build_type: "Release"
+      cmake_extra_args:
+        - "-DMLLM_BUILD_ARM_BACKEND=ON"
+        - '-DMLLM_CPU_BACKEND_COMPILE_OPTIONS="-march=native+fp16+fp16fml+dotprod+i8mm"'
+        - "-DMLLM_CPU_BACKEND_USE_SME2=OFF"
+        - "-DMLLM_USE_BLAS=ON"
+        - "-DMLLM_BLAS_VENDOR_ACCELERATE=ON"
+        - "-DMLLM_KERNEL_USE_THREADS=ON"
+        - "-DMLLM_KERNEL_THREADS_VENDOR_OPENMP=OFF"
+        - "-DMLLM_KERNEL_USE_THREADS_VENDOR_MLLM=OFF"
+        - "-DMLLM_KERNEL_THREADS_VENDOR_APPLE_GCD=ON"
+        - "-DMLLM_BUILD_SDK_C_BINDING=ON"
+        - "-DCMAKE_INSTALL_PREFIX=./mllm-cli/mllm/SDK/"
+  - CMakeBuildTask:
+      cmake_cfg_path: "build-osx-accelerate"
+  - CMakeInstallTask:
+      cmake_cfg_path: "build-osx-accelerate"
+  - MllmCliBuildTask:
+      build_dir: "mllm-cli/build"
+      cli_root: "mllm-cli"

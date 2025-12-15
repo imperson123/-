@@ -1,0 +1,13 @@
+Tasks:
+  - ignore_path:
+      - "build"
+      - "build-android-arm64-v8a"
+      - "build-android-arm64-v8a-qnn"
+      - "build-cuda"
+      - "third_party"
+      - "py-build-out"
+      - "mllm/Backends/OpenCL/Vendors"
+      - "mllm/Backends/Arm/Vendors"
+      - "mllm/backends/cpu/Vendors"
+      - "mllm/Backends/CUDA/Vendors"
+      - "mllm/Backends/CUDA/Vendors"

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="e2e_threads">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/assets/e2e_threads.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

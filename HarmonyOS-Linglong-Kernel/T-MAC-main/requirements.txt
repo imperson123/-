@@ -1,0 +1,13 @@
+numpy<2.0
+decorator
+attrs
+tornado
+psutil
+xgboost>=1.1.0
+cloudpickle
+typing_extensions
+pandas
+pytest
+torch
+transformers
+sentencepiece

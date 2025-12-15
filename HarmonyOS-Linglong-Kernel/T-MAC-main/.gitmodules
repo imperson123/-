@@ -1,0 +1,10 @@
+[submodule "3rdparty/tvm"]
+	path = 3rdparty/tvm
+	url = https://github.com/apache/tvm.git
+[submodule "3rdparty/llama.cpp"]
+	path = 3rdparty/llama.cpp
+	url = https://github.com/kaleid-liner/llama.cpp
+	branch = master-rebased
+[submodule "t-man/executorch"]
+	path = t-man/executorch
+	url = https://github.com/kaleid-liner/executorch

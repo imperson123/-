@@ -1,0 +1,4994 @@
+[
+    {
+        "timestamp":"2025-04-21 03:24:00",
+        "value":6.0,
+        "forecast":6.997099768109958,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 03:29:00",
+        "value":5.0,
+        "forecast":3.7401498570442016,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 03:34:00",
+        "value":101.0,
+        "forecast":103.67948391398322,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 03:39:00",
+        "value":3.0,
+        "forecast":4.055855735075,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 03:44:00",
+        "value":27.0,
+        "forecast":27.761025835588185,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 03:49:00",
+        "value":83.0,
+        "forecast":84.3591741617877,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 03:54:00",
+        "value":78.0,
+        "forecast":78.78280021868667,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 03:59:00",
+        "value":39.0,
+        "forecast":40.72629008078287,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:04:00",
+        "value":128.0,
+        "forecast":127.43456919032688,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:09:00",
+        "value":71.0,
+        "forecast":71.88460085668721,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:14:00",
+        "value":126.0,
+        "forecast":125.55819921683508,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:19:00",
+        "value":9.0,
+        "forecast":8.232755796359765,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:24:00",
+        "value":57.0,
+        "forecast":56.06034254893608,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:29:00",
+        "value":182.0,
+        "forecast":179.12175203972873,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:34:00",
+        "value":10.0,
+        "forecast":7.665936075132147,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:39:00",
+        "value":51.0,
+        "forecast":50.43604604188926,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:44:00",
+        "value":11.0,
+        "forecast":10.481288049253065,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:49:00",
+        "value":31.0,
+        "forecast":31.29894181236967,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:54:00",
+        "value":54.0,
+        "forecast":54.00300867075656,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 04:59:00",
+        "value":45.0,
+        "forecast":43.785114123552084,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:04:00",
+        "value":52.0,
+        "forecast":51.892526581469895,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:09:00",
+        "value":90.0,
+        "forecast":90.18107663215797,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:14:00",
+        "value":12.0,
+        "forecast":12.915968275210222,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:19:00",
+        "value":33.0,
+        "forecast":34.61152852215469,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:24:00",
+        "value":6.0,
+        "forecast":6.325535382423661,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:29:00",
+        "value":7.0,
+        "forecast":5.428276444871078,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:34:00",
+        "value":33.0,
+        "forecast":32.45404652783303,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:39:00",
+        "value":34.0,
+        "forecast":33.3662460489643,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:44:00",
+        "value":14.0,
+        "forecast":14.233779644818584,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:49:00",
+        "value":53.0,
+        "forecast":53.19665132685785,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:54:00",
+        "value":15.0,
+        "forecast":15.159157168576181,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 05:59:00",
+        "value":8.0,
+        "forecast":8.725688894371052,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:04:00",
+        "value":108.0,
+        "forecast":109.1778158367489,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:09:00",
+        "value":75.0,
+        "forecast":74.46614023407604,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:14:00",
+        "value":3.0,
+        "forecast":2.348036396820677,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:19:00",
+        "value":29.0,
+        "forecast":27.58332373663379,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:24:00",
+        "value":35.0,
+        "forecast":35.20732249068561,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:29:00",
+        "value":5.0,
+        "forecast":3.789400136372562,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:34:00",
+        "value":131.0,
+        "forecast":129.84709312218575,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:39:00",
+        "value":10.0,
+        "forecast":7.70785942469821,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:44:00",
+        "value":6.0,
+        "forecast":5.963039524846296,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:49:00",
+        "value":10.0,
+        "forecast":9.266971605010513,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:54:00",
+        "value":3.0,
+        "forecast":2.344278300622794,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 06:59:00",
+        "value":13.0,
+        "forecast":13.152679141367903,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:04:00",
+        "value":4.0,
+        "forecast":2.9717671139336423,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:09:00",
+        "value":7.0,
+        "forecast":6.9402039035288725,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:14:00",
+        "value":1.0,
+        "forecast":0.21714231234787573,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:19:00",
+        "value":135.0,
+        "forecast":132.24455150856178,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:24:00",
+        "value":11.0,
+        "forecast":11.165833933871028,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:29:00",
+        "value":12.0,
+        "forecast":11.969315379590633,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:34:00",
+        "value":43.0,
+        "forecast":42.501437144677354,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:39:00",
+        "value":18.0,
+        "forecast":17.716648400965177,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:44:00",
+        "value":9.0,
+        "forecast":10.940543044193754,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:49:00",
+        "value":17.0,
+        "forecast":16.70416304125537,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:54:00",
+        "value":4.0,
+        "forecast":5.262994102673721,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 07:59:00",
+        "value":32.0,
+        "forecast":33.811678211721194,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:04:00",
+        "value":70.0,
+        "forecast":69.0091086900844,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:09:00",
+        "value":7.0,
+        "forecast":5.766618882360333,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:14:00",
+        "value":7.0,
+        "forecast":6.184644269851006,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:19:00",
+        "value":5.0,
+        "forecast":5.629354875013197,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:24:00",
+        "value":4.0,
+        "forecast":3.982628793921405,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:29:00",
+        "value":45.0,
+        "forecast":44.22948750577764,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:34:00",
+        "value":2.0,
+        "forecast":0.9014699943245346,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:39:00",
+        "value":50.0,
+        "forecast":48.43323736116478,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:44:00",
+        "value":39.0,
+        "forecast":38.758955762884675,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:49:00",
+        "value":47.0,
+        "forecast":48.79903742079308,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:54:00",
+        "value":12.0,
+        "forecast":10.723377979020565,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 08:59:00",
+        "value":15.0,
+        "forecast":14.978848354804226,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:04:00",
+        "value":93.0,
+        "forecast":90.46567644679,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:09:00",
+        "value":12.0,
+        "forecast":10.874955472383355,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:14:00",
+        "value":48.0,
+        "forecast":46.38332557081122,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:19:00",
+        "value":11.0,
+        "forecast":11.768289687149334,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:24:00",
+        "value":7.0,
+        "forecast":6.517998519864148,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:29:00",
+        "value":58.0,
+        "forecast":58.438095723068635,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:34:00",
+        "value":26.0,
+        "forecast":27.48493918560699,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:39:00",
+        "value":9.0,
+        "forecast":8.70668058746986,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:44:00",
+        "value":23.0,
+        "forecast":23.481763376266695,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:49:00",
+        "value":10.0,
+        "forecast":9.340107875789386,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:54:00",
+        "value":8.0,
+        "forecast":6.920895628687326,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 09:59:00",
+        "value":18.0,
+        "forecast":17.403420696437088,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:04:00",
+        "value":61.0,
+        "forecast":61.82272949895943,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:09:00",
+        "value":11.0,
+        "forecast":11.453605972421723,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:14:00",
+        "value":59.0,
+        "forecast":58.10330309894847,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:19:00",
+        "value":37.0,
+        "forecast":36.634596667466354,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:24:00",
+        "value":47.0,
+        "forecast":46.91792041437451,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:29:00",
+        "value":20.0,
+        "forecast":21.094317186611026,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:34:00",
+        "value":10.0,
+        "forecast":9.390123447418741,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:39:00",
+        "value":27.0,
+        "forecast":27.305483087653542,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:44:00",
+        "value":7.0,
+        "forecast":8.460355062078467,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:49:00",
+        "value":14.0,
+        "forecast":13.374122858842897,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:54:00",
+        "value":18.0,
+        "forecast":17.114086497667014,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 10:59:00",
+        "value":9.0,
+        "forecast":9.201864229483872,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:04:00",
+        "value":39.0,
+        "forecast":37.723888055378154,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:09:00",
+        "value":9.0,
+        "forecast":8.855231194413502,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:14:00",
+        "value":11.0,
+        "forecast":8.989020008223012,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:19:00",
+        "value":15.0,
+        "forecast":14.54658136091973,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:24:00",
+        "value":8.0,
+        "forecast":9.137396634446352,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:29:00",
+        "value":43.0,
+        "forecast":44.35970111870854,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:34:00",
+        "value":11.0,
+        "forecast":13.243518513474744,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:39:00",
+        "value":11.0,
+        "forecast":11.280006089845374,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:44:00",
+        "value":32.0,
+        "forecast":31.353957957149653,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:49:00",
+        "value":9.0,
+        "forecast":8.225173980371617,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:54:00",
+        "value":47.0,
+        "forecast":46.48377855914132,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 11:59:00",
+        "value":19.0,
+        "forecast":19.402722687850627,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:04:00",
+        "value":127.0,
+        "forecast":126.0079087585368,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:09:00",
+        "value":34.0,
+        "forecast":34.4983194026929,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:14:00",
+        "value":59.0,
+        "forecast":59.3645697745201,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:19:00",
+        "value":8.0,
+        "forecast":9.337756740434996,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:24:00",
+        "value":25.0,
+        "forecast":25.62364508913055,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:29:00",
+        "value":66.0,
+        "forecast":66.93698794122704,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:34:00",
+        "value":13.0,
+        "forecast":12.790305792662902,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:39:00",
+        "value":44.0,
+        "forecast":44.14404701187953,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:44:00",
+        "value":35.0,
+        "forecast":33.92168554365323,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:49:00",
+        "value":16.0,
+        "forecast":16.746798304301723,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:54:00",
+        "value":29.0,
+        "forecast":28.483295502373398,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 12:59:00",
+        "value":45.0,
+        "forecast":47.07809001753141,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:04:00",
+        "value":67.0,
+        "forecast":66.35834656756035,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:09:00",
+        "value":144.0,
+        "forecast":143.96653800743113,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:14:00",
+        "value":29.0,
+        "forecast":30.371314090548687,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:19:00",
+        "value":234.0,
+        "forecast":233.5932976438628,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:24:00",
+        "value":81.0,
+        "forecast":79.89695216152752,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:29:00",
+        "value":12.0,
+        "forecast":12.303575226171086,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:34:00",
+        "value":171.0,
+        "forecast":170.24826567136438,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:39:00",
+        "value":51.0,
+        "forecast":51.18077950838733,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:44:00",
+        "value":60.0,
+        "forecast":59.88664725358024,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:49:00",
+        "value":91.0,
+        "forecast":90.73961734260789,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:54:00",
+        "value":71.0,
+        "forecast":72.62997471738485,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 13:59:00",
+        "value":63.0,
+        "forecast":62.07518932350526,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:04:00",
+        "value":10.0,
+        "forecast":10.734774360587599,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:09:00",
+        "value":126.0,
+        "forecast":125.16941570530935,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:14:00",
+        "value":156.0,
+        "forecast":154.92606025231137,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:19:00",
+        "value":91.0,
+        "forecast":90.5915637539474,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:24:00",
+        "value":41.0,
+        "forecast":39.733926387770744,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:29:00",
+        "value":30.0,
+        "forecast":31.952852559579245,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:34:00",
+        "value":99.0,
+        "forecast":99.43780956906213,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:39:00",
+        "value":16.0,
+        "forecast":16.28482798883929,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:44:00",
+        "value":40.0,
+        "forecast":39.55062955278141,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:49:00",
+        "value":88.0,
+        "forecast":86.97304084641712,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:54:00",
+        "value":140.0,
+        "forecast":140.97128466878502,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 14:59:00",
+        "value":82.0,
+        "forecast":81.44362002985172,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:04:00",
+        "value":105.0,
+        "forecast":105.56421841392199,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:09:00",
+        "value":190.0,
+        "forecast":189.39949097474917,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:14:00",
+        "value":55.0,
+        "forecast":55.79325372624074,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:19:00",
+        "value":47.0,
+        "forecast":47.02311978189782,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:24:00",
+        "value":63.0,
+        "forecast":63.20165967501999,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:29:00",
+        "value":21.0,
+        "forecast":21.41878248181221,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:34:00",
+        "value":134.0,
+        "forecast":134.64174876983648,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:39:00",
+        "value":76.0,
+        "forecast":75.32832862201472,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:44:00",
+        "value":62.0,
+        "forecast":62.085015173168486,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:49:00",
+        "value":62.0,
+        "forecast":63.36054592953573,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:54:00",
+        "value":67.0,
+        "forecast":68.03579987678295,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 15:59:00",
+        "value":72.0,
+        "forecast":69.90396319087377,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:04:00",
+        "value":42.0,
+        "forecast":42.2905083189295,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:09:00",
+        "value":152.0,
+        "forecast":152.83275678937784,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:14:00",
+        "value":98.0,
+        "forecast":98.62706993838337,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:19:00",
+        "value":15.0,
+        "forecast":15.746750079150033,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:24:00",
+        "value":33.0,
+        "forecast":32.03295454648909,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:29:00",
+        "value":40.0,
+        "forecast":39.27608891611729,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:34:00",
+        "value":158.0,
+        "forecast":158.17872462909907,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:39:00",
+        "value":41.0,
+        "forecast":40.92908183996012,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:44:00",
+        "value":20.0,
+        "forecast":19.325347764705572,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:49:00",
+        "value":32.0,
+        "forecast":32.10764233334501,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:54:00",
+        "value":150.0,
+        "forecast":148.13947944866035,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 16:59:00",
+        "value":132.0,
+        "forecast":131.92136439992225,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:04:00",
+        "value":64.0,
+        "forecast":64.2272389054,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:09:00",
+        "value":106.0,
+        "forecast":103.55394473627557,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:14:00",
+        "value":38.0,
+        "forecast":37.388943763581445,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:19:00",
+        "value":124.0,
+        "forecast":123.18616760111736,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:24:00",
+        "value":44.0,
+        "forecast":43.59178436241512,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:29:00",
+        "value":152.0,
+        "forecast":152.6645757476423,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:34:00",
+        "value":234.0,
+        "forecast":233.35937066165874,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:39:00",
+        "value":105.0,
+        "forecast":104.72275915715215,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:44:00",
+        "value":32.0,
+        "forecast":32.906882816275576,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:49:00",
+        "value":85.0,
+        "forecast":83.89107381890352,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:54:00",
+        "value":12.0,
+        "forecast":12.371294442262673,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 17:59:00",
+        "value":35.0,
+        "forecast":35.70547665938921,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:04:00",
+        "value":12.0,
+        "forecast":11.777264474168346,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:09:00",
+        "value":37.0,
+        "forecast":34.96591085630655,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:14:00",
+        "value":10.0,
+        "forecast":9.840671409155629,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:19:00",
+        "value":96.0,
+        "forecast":96.69358114555747,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:24:00",
+        "value":125.0,
+        "forecast":124.78192151602043,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:29:00",
+        "value":160.0,
+        "forecast":160.6899051340761,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:34:00",
+        "value":24.0,
+        "forecast":24.03289648038979,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:39:00",
+        "value":45.0,
+        "forecast":43.811980522554016,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:44:00",
+        "value":103.0,
+        "forecast":102.16885840260298,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:49:00",
+        "value":158.0,
+        "forecast":158.1506672396932,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:54:00",
+        "value":129.0,
+        "forecast":131.20762976587454,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 18:59:00",
+        "value":222.0,
+        "forecast":221.20866963464684,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:04:00",
+        "value":173.0,
+        "forecast":173.63225846178722,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:09:00",
+        "value":37.0,
+        "forecast":35.799743575268145,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:14:00",
+        "value":10.0,
+        "forecast":10.381319882393196,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:19:00",
+        "value":84.0,
+        "forecast":83.79672187301216,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:24:00",
+        "value":33.0,
+        "forecast":33.36488285003837,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:29:00",
+        "value":16.0,
+        "forecast":18.449504582500825,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:34:00",
+        "value":71.0,
+        "forecast":70.75655376942038,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:39:00",
+        "value":12.0,
+        "forecast":12.431420638269971,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:44:00",
+        "value":56.0,
+        "forecast":55.633502983886274,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:49:00",
+        "value":13.0,
+        "forecast":13.486419457799826,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:54:00",
+        "value":49.0,
+        "forecast":50.26530354069756,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 19:59:00",
+        "value":159.0,
+        "forecast":159.1263864903785,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:04:00",
+        "value":12.0,
+        "forecast":12.224565461956587,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:09:00",
+        "value":34.0,
+        "forecast":33.27895625847982,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:14:00",
+        "value":12.0,
+        "forecast":13.129511690866154,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:19:00",
+        "value":36.0,
+        "forecast":35.023434330570204,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:24:00",
+        "value":126.0,
+        "forecast":126.0441616532921,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:29:00",
+        "value":74.0,
+        "forecast":76.38871189329853,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:34:00",
+        "value":12.0,
+        "forecast":11.78796851813527,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:39:00",
+        "value":10.0,
+        "forecast":11.506866212654652,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:44:00",
+        "value":152.0,
+        "forecast":150.50557248668113,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:49:00",
+        "value":67.0,
+        "forecast":67.9763718925506,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:54:00",
+        "value":103.0,
+        "forecast":102.43648099282913,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 20:59:00",
+        "value":219.0,
+        "forecast":218.89035010238962,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:04:00",
+        "value":35.0,
+        "forecast":34.91593143581151,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:09:00",
+        "value":100.0,
+        "forecast":99.08626823297172,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:14:00",
+        "value":53.0,
+        "forecast":53.86705563976845,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:19:00",
+        "value":105.0,
+        "forecast":105.00062244235595,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:24:00",
+        "value":122.0,
+        "forecast":120.7720070927342,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:29:00",
+        "value":73.0,
+        "forecast":71.53478161706798,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:34:00",
+        "value":60.0,
+        "forecast":62.54771108578089,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:39:00",
+        "value":330.0,
+        "forecast":329.6863134479884,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:44:00",
+        "value":204.0,
+        "forecast":202.36358388891267,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:49:00",
+        "value":30.0,
+        "forecast":28.001819538305675,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:54:00",
+        "value":112.0,
+        "forecast":109.91166455940689,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 21:59:00",
+        "value":90.0,
+        "forecast":89.7132267482058,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:04:00",
+        "value":144.0,
+        "forecast":144.00618332300846,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:09:00",
+        "value":66.0,
+        "forecast":65.85026410140756,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:14:00",
+        "value":91.0,
+        "forecast":91.37555795875281,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:19:00",
+        "value":134.0,
+        "forecast":132.75854246498898,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:24:00",
+        "value":104.0,
+        "forecast":103.94392490793459,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:29:00",
+        "value":73.0,
+        "forecast":73.21456011030939,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:34:00",
+        "value":168.0,
+        "forecast":167.7300374777253,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:39:00",
+        "value":105.0,
+        "forecast":105.19217808455201,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:44:00",
+        "value":56.0,
+        "forecast":56.49290634547572,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:49:00",
+        "value":97.0,
+        "forecast":96.23205872989968,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:54:00",
+        "value":37.0,
+        "forecast":36.91918663469928,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 22:59:00",
+        "value":12.0,
+        "forecast":12.563609978119837,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:04:00",
+        "value":33.0,
+        "forecast":33.05855919225291,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:09:00",
+        "value":38.0,
+        "forecast":39.56737140274162,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:14:00",
+        "value":69.0,
+        "forecast":68.80422860050479,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:19:00",
+        "value":70.0,
+        "forecast":68.2976783790512,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:24:00",
+        "value":34.0,
+        "forecast":31.659664990330914,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:29:00",
+        "value":31.0,
+        "forecast":29.74689785841854,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:34:00",
+        "value":127.0,
+        "forecast":126.48605656063572,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:39:00",
+        "value":12.0,
+        "forecast":12.076358330491868,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:44:00",
+        "value":57.0,
+        "forecast":57.38935058048226,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:49:00",
+        "value":155.0,
+        "forecast":154.96514510150598,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:54:00",
+        "value":83.0,
+        "forecast":83.69517421575945,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-21 23:59:00",
+        "value":245.0,
+        "forecast":246.99249895841433,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:04:00",
+        "value":76.0,
+        "forecast":75.77544702043701,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:09:00",
+        "value":121.0,
+        "forecast":121.68694155911496,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:14:00",
+        "value":75.0,
+        "forecast":73.9896814756779,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:19:00",
+        "value":9.0,
+        "forecast":9.51338987174189,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:24:00",
+        "value":41.0,
+        "forecast":42.06591047871222,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:29:00",
+        "value":65.0,
+        "forecast":65.53985128505795,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:34:00",
+        "value":74.0,
+        "forecast":74.9290439073381,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:39:00",
+        "value":110.0,
+        "forecast":109.51746591227285,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:44:00",
+        "value":160.0,
+        "forecast":161.0043542235748,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:49:00",
+        "value":208.0,
+        "forecast":208.6501542451908,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:54:00",
+        "value":5.0,
+        "forecast":6.834742835722306,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 00:59:00",
+        "value":21.0,
+        "forecast":20.462168739237697,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:04:00",
+        "value":5.0,
+        "forecast":5.850551050721338,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:09:00",
+        "value":131.0,
+        "forecast":130.58403460141383,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:14:00",
+        "value":129.0,
+        "forecast":128.52969176679304,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:19:00",
+        "value":51.0,
+        "forecast":50.31351858827293,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:24:00",
+        "value":65.0,
+        "forecast":65.27794900434672,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:29:00",
+        "value":70.0,
+        "forecast":70.88904640961896,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:34:00",
+        "value":158.0,
+        "forecast":157.4684157002011,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:39:00",
+        "value":28.0,
+        "forecast":29.791740036592973,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:44:00",
+        "value":33.0,
+        "forecast":33.45298077946753,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:49:00",
+        "value":49.0,
+        "forecast":51.44123965723105,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:54:00",
+        "value":3.0,
+        "forecast":3.529742743818179,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 01:59:00",
+        "value":88.0,
+        "forecast":88.07983252313804,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:04:00",
+        "value":42.0,
+        "forecast":41.973053972817546,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:09:00",
+        "value":33.0,
+        "forecast":33.26473483325279,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:14:00",
+        "value":6.0,
+        "forecast":5.36368832797798,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:19:00",
+        "value":7.0,
+        "forecast":7.550876273025422,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:24:00",
+        "value":2.0,
+        "forecast":2.3458831312703645,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:29:00",
+        "value":4.0,
+        "forecast":3.9406376805639125,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:34:00",
+        "value":86.0,
+        "forecast":86.33717391630071,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:39:00",
+        "value":7.0,
+        "forecast":6.800643310316328,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:44:00",
+        "value":2.0,
+        "forecast":3.1767349989397595,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:49:00",
+        "value":31.0,
+        "forecast":29.176642809484683,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:54:00",
+        "value":41.0,
+        "forecast":41.78875082352673,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 02:59:00",
+        "value":97.0,
+        "forecast":97.64859700152472,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:04:00",
+        "value":123.0,
+        "forecast":123.00643007280932,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:09:00",
+        "value":23.0,
+        "forecast":24.529636666284176,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:14:00",
+        "value":3.0,
+        "forecast":4.720047684602735,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:19:00",
+        "value":44.0,
+        "forecast":46.4170980972127,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:24:00",
+        "value":91.0,
+        "forecast":90.3385250043686,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:29:00",
+        "value":67.0,
+        "forecast":66.20572726351075,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:34:00",
+        "value":29.0,
+        "forecast":30.51897912099724,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:39:00",
+        "value":223.0,
+        "forecast":223.99108107581353,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:44:00",
+        "value":21.0,
+        "forecast":21.130717209715815,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:49:00",
+        "value":42.0,
+        "forecast":40.9211952474722,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:54:00",
+        "value":39.0,
+        "forecast":39.9208179623607,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 03:59:00",
+        "value":48.0,
+        "forecast":47.61144787892576,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:04:00",
+        "value":33.0,
+        "forecast":33.50091557815354,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:09:00",
+        "value":50.0,
+        "forecast":48.34600362528147,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:14:00",
+        "value":75.0,
+        "forecast":76.026633062834,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:19:00",
+        "value":34.0,
+        "forecast":33.70020813621077,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:24:00",
+        "value":1.0,
+        "forecast":0.42046102920820505,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:29:00",
+        "value":56.0,
+        "forecast":56.23064132579323,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:34:00",
+        "value":27.0,
+        "forecast":26.076843755552186,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:39:00",
+        "value":92.0,
+        "forecast":92.51660604061557,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:44:00",
+        "value":46.0,
+        "forecast":45.17803854507758,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:49:00",
+        "value":8.0,
+        "forecast":7.889845876995428,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:54:00",
+        "value":35.0,
+        "forecast":33.7304815639123,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 04:59:00",
+        "value":24.0,
+        "forecast":25.28763250405411,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:04:00",
+        "value":13.0,
+        "forecast":14.37864131517915,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:09:00",
+        "value":31.0,
+        "forecast":30.487798047070086,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:14:00",
+        "value":18.0,
+        "forecast":18.25877287533018,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:19:00",
+        "value":66.0,
+        "forecast":65.59134822047479,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:24:00",
+        "value":10.0,
+        "forecast":11.351599678211311,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:29:00",
+        "value":8.0,
+        "forecast":6.832059671009929,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:34:00",
+        "value":7.0,
+        "forecast":6.9011806465245416,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:39:00",
+        "value":36.0,
+        "forecast":34.64503704193484,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:44:00",
+        "value":31.0,
+        "forecast":32.37919437720405,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:49:00",
+        "value":6.0,
+        "forecast":5.434583718931084,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:54:00",
+        "value":4.0,
+        "forecast":4.430483580129488,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 05:59:00",
+        "value":22.0,
+        "forecast":21.644826528061294,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:04:00",
+        "value":48.0,
+        "forecast":47.84081846856448,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:09:00",
+        "value":207.0,
+        "forecast":207.02981607193826,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:14:00",
+        "value":34.0,
+        "forecast":33.99105140264954,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:19:00",
+        "value":6.0,
+        "forecast":4.654459091966179,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:24:00",
+        "value":17.0,
+        "forecast":19.569578386353495,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:29:00",
+        "value":53.0,
+        "forecast":53.20701872833596,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:34:00",
+        "value":8.0,
+        "forecast":8.8516557659393,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:39:00",
+        "value":77.0,
+        "forecast":74.53497315549555,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:44:00",
+        "value":36.0,
+        "forecast":35.44060203698568,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:49:00",
+        "value":121.0,
+        "forecast":121.21973771012225,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:54:00",
+        "value":4.0,
+        "forecast":2.8303606788134577,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 06:59:00",
+        "value":60.0,
+        "forecast":61.05190781270233,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:04:00",
+        "value":8.0,
+        "forecast":8.876119433130302,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:09:00",
+        "value":4.0,
+        "forecast":3.783910131443375,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:14:00",
+        "value":6.0,
+        "forecast":4.813018423247128,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:19:00",
+        "value":84.0,
+        "forecast":83.30073366811365,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:24:00",
+        "value":3.0,
+        "forecast":4.11647861012001,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:29:00",
+        "value":24.0,
+        "forecast":24.98506059689938,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:34:00",
+        "value":1.0,
+        "forecast":1.0304333660287814,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:39:00",
+        "value":7.0,
+        "forecast":6.858193272682598,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:44:00",
+        "value":9.0,
+        "forecast":8.843892302521374,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:49:00",
+        "value":37.0,
+        "forecast":36.45409062689983,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:54:00",
+        "value":5.0,
+        "forecast":4.094155967173133,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 07:59:00",
+        "value":26.0,
+        "forecast":27.868314967315175,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:04:00",
+        "value":112.0,
+        "forecast":113.24514582298559,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:09:00",
+        "value":34.0,
+        "forecast":32.86650652555731,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:14:00",
+        "value":11.0,
+        "forecast":12.216448372699425,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:19:00",
+        "value":48.0,
+        "forecast":48.018532820043035,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:24:00",
+        "value":14.0,
+        "forecast":14.505808275855152,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:29:00",
+        "value":74.0,
+        "forecast":72.77193432377575,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:34:00",
+        "value":96.0,
+        "forecast":97.51569086579296,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:39:00",
+        "value":56.0,
+        "forecast":57.31115957885146,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:44:00",
+        "value":81.0,
+        "forecast":81.27528461036748,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:49:00",
+        "value":8.0,
+        "forecast":8.823343301840593,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:54:00",
+        "value":54.0,
+        "forecast":52.44452851560824,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 08:59:00",
+        "value":34.0,
+        "forecast":33.411381108370165,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:04:00",
+        "value":3.0,
+        "forecast":3.6930666663219993,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:09:00",
+        "value":67.0,
+        "forecast":68.99821325343558,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:14:00",
+        "value":119.0,
+        "forecast":119.13705622798216,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:19:00",
+        "value":13.0,
+        "forecast":11.76054239115551,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:24:00",
+        "value":75.0,
+        "forecast":76.05462131933704,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:29:00",
+        "value":5.0,
+        "forecast":4.12459566853363,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:34:00",
+        "value":14.0,
+        "forecast":15.258194165926785,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:39:00",
+        "value":147.0,
+        "forecast":146.35949215365602,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:44:00",
+        "value":38.0,
+        "forecast":38.44370614925138,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:49:00",
+        "value":6.0,
+        "forecast":6.5957690858659355,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:54:00",
+        "value":84.0,
+        "forecast":85.46627648625717,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 09:59:00",
+        "value":8.0,
+        "forecast":8.617265926010477,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:04:00",
+        "value":98.0,
+        "forecast":98.722979516101,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:09:00",
+        "value":120.0,
+        "forecast":121.25840429054398,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:14:00",
+        "value":89.0,
+        "forecast":91.03370341702372,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:19:00",
+        "value":37.0,
+        "forecast":35.09744895929645,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:24:00",
+        "value":6.0,
+        "forecast":6.394251110277663,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:29:00",
+        "value":16.0,
+        "forecast":15.549969235874155,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:34:00",
+        "value":87.0,
+        "forecast":87.32476620531865,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:39:00",
+        "value":33.0,
+        "forecast":31.018497091222194,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:44:00",
+        "value":48.0,
+        "forecast":48.829085978533705,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:49:00",
+        "value":6.0,
+        "forecast":5.889907927446375,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:54:00",
+        "value":41.0,
+        "forecast":42.02871532330018,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 10:59:00",
+        "value":31.0,
+        "forecast":31.0436686966617,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:04:00",
+        "value":27.0,
+        "forecast":26.433178659380893,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:09:00",
+        "value":49.0,
+        "forecast":48.84668180572385,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:14:00",
+        "value":95.0,
+        "forecast":97.08550603558128,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:19:00",
+        "value":6.0,
+        "forecast":5.831936064889146,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:24:00",
+        "value":8.0,
+        "forecast":8.257039231506278,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:29:00",
+        "value":37.0,
+        "forecast":36.91529892762784,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:34:00",
+        "value":6.0,
+        "forecast":4.170718817153023,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:39:00",
+        "value":34.0,
+        "forecast":33.74182375111433,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:44:00",
+        "value":9.0,
+        "forecast":7.810973646339269,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:49:00",
+        "value":11.0,
+        "forecast":11.45013854345315,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:54:00",
+        "value":41.0,
+        "forecast":43.07974842259928,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 11:59:00",
+        "value":28.0,
+        "forecast":28.36313933802386,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:04:00",
+        "value":97.0,
+        "forecast":97.00122198062552,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:09:00",
+        "value":84.0,
+        "forecast":84.18583892365761,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:14:00",
+        "value":41.0,
+        "forecast":41.16305755964573,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:19:00",
+        "value":152.0,
+        "forecast":152.0297191541458,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:24:00",
+        "value":74.0,
+        "forecast":74.72152433765895,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:29:00",
+        "value":75.0,
+        "forecast":74.96328952209666,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:34:00",
+        "value":45.0,
+        "forecast":44.79165991103511,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:39:00",
+        "value":168.0,
+        "forecast":167.32822908172932,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:44:00",
+        "value":7.0,
+        "forecast":7.182024108508282,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:49:00",
+        "value":29.0,
+        "forecast":28.243529542193528,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:54:00",
+        "value":123.0,
+        "forecast":123.346542388176,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 12:59:00",
+        "value":5.0,
+        "forecast":4.829638098676104,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:04:00",
+        "value":36.0,
+        "forecast":33.86756090084494,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:09:00",
+        "value":155.0,
+        "forecast":154.96238400890846,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:14:00",
+        "value":44.0,
+        "forecast":46.24058418205141,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:19:00",
+        "value":5.0,
+        "forecast":5.8118691577497374,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:24:00",
+        "value":128.0,
+        "forecast":128.12514473993735,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:29:00",
+        "value":22.0,
+        "forecast":20.867607349518913,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:34:00",
+        "value":57.0,
+        "forecast":57.47561157151185,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:39:00",
+        "value":62.0,
+        "forecast":64.05599130279536,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:44:00",
+        "value":66.0,
+        "forecast":68.25425991141206,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:49:00",
+        "value":63.0,
+        "forecast":61.81493868985353,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:54:00",
+        "value":34.0,
+        "forecast":34.102904508025595,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 13:59:00",
+        "value":7.0,
+        "forecast":8.200025692596663,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:04:00",
+        "value":2.0,
+        "forecast":1.6125492968690978,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:09:00",
+        "value":81.0,
+        "forecast":82.00351815499708,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:14:00",
+        "value":70.0,
+        "forecast":70.28629261775576,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:19:00",
+        "value":109.0,
+        "forecast":108.22135517435255,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:24:00",
+        "value":52.0,
+        "forecast":51.11029263033558,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:29:00",
+        "value":50.0,
+        "forecast":49.49408544693393,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:34:00",
+        "value":109.0,
+        "forecast":108.39992381074372,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:39:00",
+        "value":7.0,
+        "forecast":7.136553455187871,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:44:00",
+        "value":38.0,
+        "forecast":36.79163222777109,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:49:00",
+        "value":64.0,
+        "forecast":63.25708206076939,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:54:00",
+        "value":10.0,
+        "forecast":10.147174675880027,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 14:59:00",
+        "value":61.0,
+        "forecast":60.08676559639493,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:04:00",
+        "value":88.0,
+        "forecast":88.76530191453269,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:09:00",
+        "value":54.0,
+        "forecast":54.34036651344442,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:14:00",
+        "value":163.0,
+        "forecast":165.85244737154952,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:19:00",
+        "value":50.0,
+        "forecast":51.22374110349569,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:24:00",
+        "value":19.0,
+        "forecast":21.0334475206291,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:29:00",
+        "value":4.0,
+        "forecast":4.319568359130113,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:34:00",
+        "value":192.0,
+        "forecast":192.72039233042668,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:39:00",
+        "value":44.0,
+        "forecast":42.45379846003412,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:44:00",
+        "value":49.0,
+        "forecast":48.74832617838907,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:49:00",
+        "value":62.0,
+        "forecast":62.20493501843179,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:54:00",
+        "value":4.0,
+        "forecast":2.8285082545495346,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 15:59:00",
+        "value":94.0,
+        "forecast":92.6471750163742,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:04:00",
+        "value":151.0,
+        "forecast":151.28717312948694,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:09:00",
+        "value":152.0,
+        "forecast":151.63018035572497,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:14:00",
+        "value":35.0,
+        "forecast":35.23174318497099,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:19:00",
+        "value":42.0,
+        "forecast":43.38977554665789,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:24:00",
+        "value":84.0,
+        "forecast":84.40996783390455,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:29:00",
+        "value":69.0,
+        "forecast":69.45194443719353,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:34:00",
+        "value":9.0,
+        "forecast":8.449571322738471,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:39:00",
+        "value":68.0,
+        "forecast":66.74349042008303,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:44:00",
+        "value":72.0,
+        "forecast":70.24348069863817,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:49:00",
+        "value":11.0,
+        "forecast":9.105361433945227,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:54:00",
+        "value":308.0,
+        "forecast":307.42848554792255,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 16:59:00",
+        "value":97.0,
+        "forecast":97.85734473421384,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:04:00",
+        "value":200.0,
+        "forecast":199.74844528803473,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:09:00",
+        "value":100.0,
+        "forecast":99.45414953417277,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:14:00",
+        "value":109.0,
+        "forecast":108.33147369622692,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:19:00",
+        "value":43.0,
+        "forecast":43.56668825529863,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:24:00",
+        "value":230.0,
+        "forecast":230.00606242703853,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:29:00",
+        "value":181.0,
+        "forecast":181.8987567305166,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:34:00",
+        "value":151.0,
+        "forecast":151.10911914626382,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:39:00",
+        "value":179.0,
+        "forecast":179.98237359753523,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:44:00",
+        "value":44.0,
+        "forecast":44.77446582782172,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:49:00",
+        "value":125.0,
+        "forecast":126.02189102339825,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:54:00",
+        "value":12.0,
+        "forecast":10.608472981000816,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 17:59:00",
+        "value":116.0,
+        "forecast":115.53554115439562,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:04:00",
+        "value":150.0,
+        "forecast":150.21979026882582,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:09:00",
+        "value":87.0,
+        "forecast":86.23302332089409,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:14:00",
+        "value":69.0,
+        "forecast":68.0224108685589,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:19:00",
+        "value":10.0,
+        "forecast":10.595551789681313,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:24:00",
+        "value":64.0,
+        "forecast":62.49073700100919,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:29:00",
+        "value":244.0,
+        "forecast":245.3436711958448,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:34:00",
+        "value":99.0,
+        "forecast":99.39055220100724,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:39:00",
+        "value":11.0,
+        "forecast":11.21424700367866,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:44:00",
+        "value":32.0,
+        "forecast":31.329788947911087,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:49:00",
+        "value":57.0,
+        "forecast":56.747366602498246,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 18:54:00",
+        "value":40.0,
+        "forecast":42.62454756918607,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 18:59:00",
+        "value":86.0,
+        "forecast":88.77483170265236,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:04:00",
+        "value":136.0,
+        "forecast":138.54542932007982,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:09:00",
+        "value":116.0,
+        "forecast":118.24966914594887,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:14:00",
+        "value":84.0,
+        "forecast":86.96192429031186,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:19:00",
+        "value":150.0,
+        "forecast":152.47010943117965,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:24:00",
+        "value":48.0,
+        "forecast":50.12747175343726,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:29:00",
+        "value":175.0,
+        "forecast":177.84439129937545,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:34:00",
+        "value":656.0,
+        "forecast":658.0644317967684,
+        "is_anomaly":1
+    },
+    {
+        "timestamp":"2025-04-22 19:39:00",
+        "value":256.0,
+        "forecast":255.4406291613134,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 19:44:00",
+        "value":195.0,
+        "forecast":195.33279552992832,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 19:49:00",
+        "value":338.0,
+        "forecast":337.23515723267417,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 19:54:00",
+        "value":13.0,
+        "forecast":11.94478414157336,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 19:59:00",
+        "value":145.0,
+        "forecast":144.6600909748379,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:04:00",
+        "value":173.0,
+        "forecast":172.45839328413038,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:09:00",
+        "value":120.0,
+        "forecast":119.41275982359376,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:14:00",
+        "value":92.0,
+        "forecast":93.26520576106118,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:19:00",
+        "value":27.0,
+        "forecast":27.661343551102682,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:24:00",
+        "value":79.0,
+        "forecast":77.52066180577263,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:29:00",
+        "value":90.0,
+        "forecast":90.38646929858481,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:34:00",
+        "value":131.0,
+        "forecast":130.5831270604968,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:39:00",
+        "value":235.0,
+        "forecast":234.07943620097106,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:44:00",
+        "value":42.0,
+        "forecast":43.096994912625284,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:49:00",
+        "value":88.0,
+        "forecast":88.54147938166393,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:54:00",
+        "value":136.0,
+        "forecast":137.59333750295372,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 20:59:00",
+        "value":239.0,
+        "forecast":239.40935316928056,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:04:00",
+        "value":61.0,
+        "forecast":61.037773725771544,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:09:00",
+        "value":55.0,
+        "forecast":54.81766957261289,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:14:00",
+        "value":135.0,
+        "forecast":135.29597944406305,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:19:00",
+        "value":102.0,
+        "forecast":101.69748362475843,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:24:00",
+        "value":112.0,
+        "forecast":114.61974977188618,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:29:00",
+        "value":184.0,
+        "forecast":184.58939940518593,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:34:00",
+        "value":184.0,
+        "forecast":183.04083727137842,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:39:00",
+        "value":64.0,
+        "forecast":62.549413812410755,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:44:00",
+        "value":112.0,
+        "forecast":111.63892448448057,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:49:00",
+        "value":114.0,
+        "forecast":113.48011706215242,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:54:00",
+        "value":174.0,
+        "forecast":171.64209696872385,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 21:59:00",
+        "value":229.0,
+        "forecast":227.79903362039968,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:04:00",
+        "value":102.0,
+        "forecast":101.03665815846364,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:09:00",
+        "value":114.0,
+        "forecast":114.41275045581081,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:14:00",
+        "value":89.0,
+        "forecast":89.25434625462205,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:19:00",
+        "value":59.0,
+        "forecast":57.14071853967928,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:24:00",
+        "value":36.0,
+        "forecast":34.39038764022646,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:29:00",
+        "value":26.0,
+        "forecast":27.443891060995675,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:34:00",
+        "value":227.0,
+        "forecast":226.19985346919484,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:39:00",
+        "value":52.0,
+        "forecast":53.72039073666433,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:44:00",
+        "value":11.0,
+        "forecast":11.890349104765338,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:49:00",
+        "value":84.0,
+        "forecast":84.74609495891333,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:54:00",
+        "value":52.0,
+        "forecast":51.90549262146211,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 22:59:00",
+        "value":14.0,
+        "forecast":12.764422433068459,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:04:00",
+        "value":9.0,
+        "forecast":10.612492812926382,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:09:00",
+        "value":50.0,
+        "forecast":51.13187671101738,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:14:00",
+        "value":88.0,
+        "forecast":87.63374984229254,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:19:00",
+        "value":84.0,
+        "forecast":84.16959068929776,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:24:00",
+        "value":120.0,
+        "forecast":119.70173193068187,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:29:00",
+        "value":50.0,
+        "forecast":50.00930794896638,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:34:00",
+        "value":144.0,
+        "forecast":144.9866960623585,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:39:00",
+        "value":94.0,
+        "forecast":93.12785156431931,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:44:00",
+        "value":17.0,
+        "forecast":16.91965999856343,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:49:00",
+        "value":109.0,
+        "forecast":108.66495065936172,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:54:00",
+        "value":79.0,
+        "forecast":80.10974671255558,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-22 23:59:00",
+        "value":45.0,
+        "forecast":45.537400339810844,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:04:00",
+        "value":24.0,
+        "forecast":23.486519421980013,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:09:00",
+        "value":56.0,
+        "forecast":55.920244920910065,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:14:00",
+        "value":78.0,
+        "forecast":76.6455954780861,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:19:00",
+        "value":36.0,
+        "forecast":35.877151067312354,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:24:00",
+        "value":53.0,
+        "forecast":52.89758525970047,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:29:00",
+        "value":4.0,
+        "forecast":2.985185620257174,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:34:00",
+        "value":30.0,
+        "forecast":30.113867798765313,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:39:00",
+        "value":64.0,
+        "forecast":63.145892308463075,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:44:00",
+        "value":106.0,
+        "forecast":104.16784573760636,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:49:00",
+        "value":25.0,
+        "forecast":25.950488312972716,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:54:00",
+        "value":6.0,
+        "forecast":5.417060984813246,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 00:59:00",
+        "value":9.0,
+        "forecast":10.294691962745564,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:04:00",
+        "value":127.0,
+        "forecast":125.90265236333802,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:09:00",
+        "value":153.0,
+        "forecast":151.67244041547784,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:14:00",
+        "value":47.0,
+        "forecast":47.12695897280305,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:19:00",
+        "value":36.0,
+        "forecast":36.092817466747064,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:24:00",
+        "value":27.0,
+        "forecast":25.70345250242284,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:29:00",
+        "value":18.0,
+        "forecast":19.809154203309618,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:34:00",
+        "value":91.0,
+        "forecast":91.14161109502393,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:39:00",
+        "value":94.0,
+        "forecast":92.7682776501212,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:44:00",
+        "value":179.0,
+        "forecast":178.32170108059415,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:49:00",
+        "value":184.0,
+        "forecast":184.4243726683336,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:54:00",
+        "value":59.0,
+        "forecast":58.31218113837729,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 01:59:00",
+        "value":301.0,
+        "forecast":301.6428285026957,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:04:00",
+        "value":56.0,
+        "forecast":55.945820265023514,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:09:00",
+        "value":117.0,
+        "forecast":116.74419156927384,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:14:00",
+        "value":76.0,
+        "forecast":74.051851254451,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:19:00",
+        "value":64.0,
+        "forecast":65.38857682158101,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:24:00",
+        "value":76.0,
+        "forecast":76.93423455560304,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:29:00",
+        "value":78.0,
+        "forecast":76.82889330049355,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:34:00",
+        "value":8.0,
+        "forecast":8.310791156346287,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:39:00",
+        "value":100.0,
+        "forecast":97.49472154611168,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:44:00",
+        "value":13.0,
+        "forecast":12.638723119103473,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:49:00",
+        "value":66.0,
+        "forecast":66.23699111645372,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:54:00",
+        "value":69.0,
+        "forecast":68.6291576483224,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 02:59:00",
+        "value":106.0,
+        "forecast":104.88551878040786,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:04:00",
+        "value":110.0,
+        "forecast":109.59913691851773,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:09:00",
+        "value":11.0,
+        "forecast":11.570821864728448,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:14:00",
+        "value":42.0,
+        "forecast":41.30502983504935,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:19:00",
+        "value":78.0,
+        "forecast":77.37120174930605,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:24:00",
+        "value":34.0,
+        "forecast":32.99554997136328,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:29:00",
+        "value":18.0,
+        "forecast":18.89782139301968,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:34:00",
+        "value":67.0,
+        "forecast":67.93569000261142,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:39:00",
+        "value":74.0,
+        "forecast":75.37674938621,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:44:00",
+        "value":17.0,
+        "forecast":16.99504042528773,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:49:00",
+        "value":30.0,
+        "forecast":28.913956714075546,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:54:00",
+        "value":100.0,
+        "forecast":99.02399061137395,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 03:59:00",
+        "value":12.0,
+        "forecast":12.990582910727651,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:04:00",
+        "value":30.0,
+        "forecast":29.716440429205417,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:09:00",
+        "value":52.0,
+        "forecast":54.521297535470765,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:14:00",
+        "value":4.0,
+        "forecast":4.786059779793366,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:19:00",
+        "value":8.0,
+        "forecast":6.197523713347094,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:24:00",
+        "value":75.0,
+        "forecast":74.12306585647066,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:29:00",
+        "value":123.0,
+        "forecast":121.77360828974011,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:34:00",
+        "value":91.0,
+        "forecast":90.38199240649534,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:39:00",
+        "value":43.0,
+        "forecast":41.39341540488618,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:44:00",
+        "value":192.0,
+        "forecast":193.56902577582972,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:49:00",
+        "value":85.0,
+        "forecast":86.04479848058305,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:54:00",
+        "value":43.0,
+        "forecast":43.95481191697661,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 04:59:00",
+        "value":36.0,
+        "forecast":36.53405022232337,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:04:00",
+        "value":27.0,
+        "forecast":26.7364408004762,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:09:00",
+        "value":34.0,
+        "forecast":33.68124154007838,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:14:00",
+        "value":55.0,
+        "forecast":54.269949996134635,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:19:00",
+        "value":34.0,
+        "forecast":33.62954375287275,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:24:00",
+        "value":61.0,
+        "forecast":61.90649142521055,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:29:00",
+        "value":19.0,
+        "forecast":17.90641222343269,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:34:00",
+        "value":48.0,
+        "forecast":47.363382621709555,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:39:00",
+        "value":37.0,
+        "forecast":37.16885080043068,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:44:00",
+        "value":74.0,
+        "forecast":73.53779282078314,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:49:00",
+        "value":46.0,
+        "forecast":45.87748931867031,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:54:00",
+        "value":5.0,
+        "forecast":6.0804002241406625,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 05:59:00",
+        "value":37.0,
+        "forecast":37.3254848770067,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:04:00",
+        "value":67.0,
+        "forecast":67.53931996373552,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:09:00",
+        "value":29.0,
+        "forecast":29.047819357608734,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:14:00",
+        "value":5.0,
+        "forecast":5.462827303258396,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:19:00",
+        "value":67.0,
+        "forecast":66.52149454055899,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:24:00",
+        "value":44.0,
+        "forecast":46.16903008988143,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:29:00",
+        "value":34.0,
+        "forecast":34.88227232421751,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:34:00",
+        "value":131.0,
+        "forecast":132.51794757838928,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:39:00",
+        "value":143.0,
+        "forecast":141.91293056992882,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:44:00",
+        "value":141.0,
+        "forecast":141.24630122137577,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:49:00",
+        "value":47.0,
+        "forecast":47.936733423644085,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:54:00",
+        "value":56.0,
+        "forecast":55.514190464765726,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 06:59:00",
+        "value":101.0,
+        "forecast":100.71950907678614,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:04:00",
+        "value":27.0,
+        "forecast":25.925776990235253,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:09:00",
+        "value":170.0,
+        "forecast":168.75595773935189,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:14:00",
+        "value":45.0,
+        "forecast":44.85875680789193,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:19:00",
+        "value":87.0,
+        "forecast":88.34838592422133,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:24:00",
+        "value":69.0,
+        "forecast":68.92751474438114,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:29:00",
+        "value":12.0,
+        "forecast":12.60878108364361,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:34:00",
+        "value":98.0,
+        "forecast":98.78340374315063,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:39:00",
+        "value":34.0,
+        "forecast":33.936954803786,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:44:00",
+        "value":108.0,
+        "forecast":107.6721068145863,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:49:00",
+        "value":42.0,
+        "forecast":41.80125681503567,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:54:00",
+        "value":36.0,
+        "forecast":36.365267210591206,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 07:59:00",
+        "value":31.0,
+        "forecast":30.37947385751919,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:04:00",
+        "value":42.0,
+        "forecast":40.8303694014466,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:09:00",
+        "value":14.0,
+        "forecast":14.310034635285197,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:14:00",
+        "value":3.0,
+        "forecast":3.87911933690717,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:19:00",
+        "value":80.0,
+        "forecast":78.525605987215,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:24:00",
+        "value":75.0,
+        "forecast":74.24353529335818,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:29:00",
+        "value":10.0,
+        "forecast":8.207998546221102,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:34:00",
+        "value":73.0,
+        "forecast":73.92366931253143,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:39:00",
+        "value":6.0,
+        "forecast":6.074630603763474,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:44:00",
+        "value":5.0,
+        "forecast":4.292177701040297,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:49:00",
+        "value":150.0,
+        "forecast":151.45949224559544,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:54:00",
+        "value":7.0,
+        "forecast":7.134277892905537,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 08:59:00",
+        "value":19.0,
+        "forecast":18.306627834132303,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:04:00",
+        "value":94.0,
+        "forecast":94.08690179989006,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:09:00",
+        "value":9.0,
+        "forecast":9.86186959940613,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:14:00",
+        "value":67.0,
+        "forecast":67.08126610818411,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:19:00",
+        "value":80.0,
+        "forecast":78.19314085874443,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:24:00",
+        "value":5.0,
+        "forecast":3.0694939422856122,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:29:00",
+        "value":127.0,
+        "forecast":127.82405688082505,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:34:00",
+        "value":68.0,
+        "forecast":65.97204996157839,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:39:00",
+        "value":7.0,
+        "forecast":7.8534630403729295,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:44:00",
+        "value":18.0,
+        "forecast":17.66998032636704,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:49:00",
+        "value":156.0,
+        "forecast":157.9249476762728,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:54:00",
+        "value":46.0,
+        "forecast":45.53490336951239,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 09:59:00",
+        "value":111.0,
+        "forecast":109.49174442738939,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:04:00",
+        "value":29.0,
+        "forecast":29.659352904987063,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:09:00",
+        "value":160.0,
+        "forecast":159.60413426588443,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:14:00",
+        "value":17.0,
+        "forecast":16.753514510594858,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:19:00",
+        "value":18.0,
+        "forecast":18.382492221081066,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:24:00",
+        "value":13.0,
+        "forecast":13.591919406397391,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:29:00",
+        "value":56.0,
+        "forecast":55.60497133809327,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:34:00",
+        "value":55.0,
+        "forecast":56.488882080667345,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:39:00",
+        "value":19.0,
+        "forecast":20.97847856242666,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:44:00",
+        "value":6.0,
+        "forecast":7.941968315866131,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:49:00",
+        "value":9.0,
+        "forecast":10.139751555604658,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:54:00",
+        "value":54.0,
+        "forecast":53.78928094680263,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 10:59:00",
+        "value":34.0,
+        "forecast":32.69966908679875,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:04:00",
+        "value":6.0,
+        "forecast":5.989582272578059,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:09:00",
+        "value":45.0,
+        "forecast":44.69339678980046,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:14:00",
+        "value":4.0,
+        "forecast":6.737016754594745,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:19:00",
+        "value":7.0,
+        "forecast":8.690335137628157,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:24:00",
+        "value":144.0,
+        "forecast":143.18731596257155,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:29:00",
+        "value":39.0,
+        "forecast":39.34993012271427,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:34:00",
+        "value":138.0,
+        "forecast":138.2240083751048,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:39:00",
+        "value":82.0,
+        "forecast":80.27752893822381,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:44:00",
+        "value":15.0,
+        "forecast":14.333379711522989,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:49:00",
+        "value":10.0,
+        "forecast":11.11544590183963,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:54:00",
+        "value":47.0,
+        "forecast":48.1309902680998,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 11:59:00",
+        "value":51.0,
+        "forecast":50.60500728965231,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:04:00",
+        "value":39.0,
+        "forecast":39.32468291005911,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:09:00",
+        "value":71.0,
+        "forecast":71.69781506294662,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:14:00",
+        "value":36.0,
+        "forecast":36.35208334176993,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:19:00",
+        "value":222.0,
+        "forecast":222.66637293190752,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:24:00",
+        "value":107.0,
+        "forecast":107.6496602301359,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:29:00",
+        "value":67.0,
+        "forecast":67.55387925448554,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:34:00",
+        "value":76.0,
+        "forecast":76.83524975619326,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:39:00",
+        "value":128.0,
+        "forecast":127.44958009742987,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:44:00",
+        "value":132.0,
+        "forecast":132.46262459497342,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:49:00",
+        "value":52.0,
+        "forecast":50.95487271668281,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:54:00",
+        "value":78.0,
+        "forecast":78.88944334766516,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 12:59:00",
+        "value":5.0,
+        "forecast":4.84302990551344,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:04:00",
+        "value":75.0,
+        "forecast":76.27922138675495,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:09:00",
+        "value":85.0,
+        "forecast":86.10047569964105,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:14:00",
+        "value":56.0,
+        "forecast":54.81683101715325,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:19:00",
+        "value":66.0,
+        "forecast":64.22925174115298,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:24:00",
+        "value":32.0,
+        "forecast":32.213925389407876,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:29:00",
+        "value":90.0,
+        "forecast":90.27012386828837,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:34:00",
+        "value":8.0,
+        "forecast":7.762547149172823,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:39:00",
+        "value":6.0,
+        "forecast":4.525581416268823,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:44:00",
+        "value":7.0,
+        "forecast":7.1272940551214985,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:49:00",
+        "value":4.0,
+        "forecast":3.7599577314802066,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:54:00",
+        "value":53.0,
+        "forecast":52.26016988735701,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 13:59:00",
+        "value":75.0,
+        "forecast":76.16091273547919,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:04:00",
+        "value":4.0,
+        "forecast":3.3144171471392694,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:09:00",
+        "value":69.0,
+        "forecast":68.72523144999299,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:14:00",
+        "value":83.0,
+        "forecast":83.98262750736144,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:19:00",
+        "value":42.0,
+        "forecast":42.564721950694434,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:24:00",
+        "value":2.0,
+        "forecast":2.1335087800335106,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:29:00",
+        "value":48.0,
+        "forecast":48.61423906849166,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:34:00",
+        "value":313.0,
+        "forecast":313.3030287925417,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:39:00",
+        "value":43.0,
+        "forecast":42.99908674402997,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:44:00",
+        "value":132.0,
+        "forecast":132.70630648146093,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:49:00",
+        "value":89.0,
+        "forecast":88.91722065624758,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:54:00",
+        "value":84.0,
+        "forecast":83.60343009514266,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 14:59:00",
+        "value":36.0,
+        "forecast":36.46899530143985,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:04:00",
+        "value":159.0,
+        "forecast":159.3569399771436,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:09:00",
+        "value":100.0,
+        "forecast":100.37130768616575,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:14:00",
+        "value":121.0,
+        "forecast":121.90176677482278,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:19:00",
+        "value":13.0,
+        "forecast":12.633754886826212,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:24:00",
+        "value":63.0,
+        "forecast":63.38156760341419,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:29:00",
+        "value":52.0,
+        "forecast":51.02118562035053,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:34:00",
+        "value":167.0,
+        "forecast":166.53385441582085,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:39:00",
+        "value":17.0,
+        "forecast":16.458439025800104,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:44:00",
+        "value":202.0,
+        "forecast":200.66399367708186,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:49:00",
+        "value":52.0,
+        "forecast":50.76031512280564,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:54:00",
+        "value":67.0,
+        "forecast":64.86886847577271,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 15:59:00",
+        "value":37.0,
+        "forecast":38.31149818385854,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:04:00",
+        "value":81.0,
+        "forecast":81.34241014725791,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:09:00",
+        "value":23.0,
+        "forecast":23.833552505732314,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:14:00",
+        "value":48.0,
+        "forecast":46.55868199620306,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:19:00",
+        "value":27.0,
+        "forecast":26.738491960918047,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:24:00",
+        "value":13.0,
+        "forecast":11.136979450782981,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:29:00",
+        "value":78.0,
+        "forecast":78.463047746528,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:34:00",
+        "value":61.0,
+        "forecast":60.66443450285566,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:39:00",
+        "value":10.0,
+        "forecast":8.139486444388693,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:44:00",
+        "value":167.0,
+        "forecast":167.76475477724807,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:49:00",
+        "value":60.0,
+        "forecast":59.933951040366075,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:54:00",
+        "value":58.0,
+        "forecast":57.61886998768793,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 16:59:00",
+        "value":99.0,
+        "forecast":97.83860860430772,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:04:00",
+        "value":56.0,
+        "forecast":55.7320926405609,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:09:00",
+        "value":84.0,
+        "forecast":84.62663034749744,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:14:00",
+        "value":151.0,
+        "forecast":150.2112713134782,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:19:00",
+        "value":39.0,
+        "forecast":36.81441317554124,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:24:00",
+        "value":128.0,
+        "forecast":128.4201434142707,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:29:00",
+        "value":74.0,
+        "forecast":76.64754986509732,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:34:00",
+        "value":83.0,
+        "forecast":84.38846264414043,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:39:00",
+        "value":36.0,
+        "forecast":35.78217637660954,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:44:00",
+        "value":157.0,
+        "forecast":156.8820234846894,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:49:00",
+        "value":299.0,
+        "forecast":299.30450342838975,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:54:00",
+        "value":147.0,
+        "forecast":146.76885420318882,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 17:59:00",
+        "value":104.0,
+        "forecast":104.97997035101727,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:04:00",
+        "value":54.0,
+        "forecast":52.538031468646764,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:09:00",
+        "value":45.0,
+        "forecast":44.725909643355266,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:14:00",
+        "value":15.0,
+        "forecast":13.416496760960674,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:19:00",
+        "value":99.0,
+        "forecast":99.86104735912517,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:24:00",
+        "value":54.0,
+        "forecast":51.702640791279855,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:29:00",
+        "value":117.0,
+        "forecast":116.42981003633645,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:34:00",
+        "value":15.0,
+        "forecast":16.66700896439947,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:39:00",
+        "value":31.0,
+        "forecast":31.70590786143561,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:44:00",
+        "value":93.0,
+        "forecast":93.73995592182813,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:49:00",
+        "value":127.0,
+        "forecast":126.192906522293,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:54:00",
+        "value":169.0,
+        "forecast":167.72954431764123,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 18:59:00",
+        "value":135.0,
+        "forecast":133.5122427112478,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:04:00",
+        "value":10.0,
+        "forecast":10.338245984915774,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:09:00",
+        "value":15.0,
+        "forecast":13.946117658972534,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:14:00",
+        "value":104.0,
+        "forecast":105.1399530133692,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:19:00",
+        "value":118.0,
+        "forecast":117.24172382410177,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:24:00",
+        "value":164.0,
+        "forecast":162.6905650267964,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:29:00",
+        "value":114.0,
+        "forecast":113.96930301688013,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:34:00",
+        "value":13.0,
+        "forecast":14.52099142517553,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:39:00",
+        "value":90.0,
+        "forecast":89.73776959152887,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:44:00",
+        "value":57.0,
+        "forecast":54.732451898412904,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:49:00",
+        "value":261.0,
+        "forecast":260.96179335407794,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:54:00",
+        "value":58.0,
+        "forecast":57.78715956081176,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 19:59:00",
+        "value":162.0,
+        "forecast":162.09414350601793,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:04:00",
+        "value":63.0,
+        "forecast":62.72053884073018,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:09:00",
+        "value":80.0,
+        "forecast":80.1380332592719,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:14:00",
+        "value":109.0,
+        "forecast":108.83210667990485,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:19:00",
+        "value":93.0,
+        "forecast":92.91086722117386,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:24:00",
+        "value":16.0,
+        "forecast":16.737996699570978,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:29:00",
+        "value":119.0,
+        "forecast":118.67009861161594,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:34:00",
+        "value":17.0,
+        "forecast":17.550231353541154,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:39:00",
+        "value":141.0,
+        "forecast":140.40681593657573,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:44:00",
+        "value":53.0,
+        "forecast":51.95404659455248,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:49:00",
+        "value":86.0,
+        "forecast":85.70650411147697,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:54:00",
+        "value":171.0,
+        "forecast":173.92141469723452,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 20:59:00",
+        "value":192.0,
+        "forecast":192.45913687928865,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:04:00",
+        "value":165.0,
+        "forecast":166.13186064455294,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:09:00",
+        "value":84.0,
+        "forecast":84.81654779110752,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:14:00",
+        "value":131.0,
+        "forecast":129.98953252686994,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:19:00",
+        "value":27.0,
+        "forecast":25.203146915801796,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:24:00",
+        "value":165.0,
+        "forecast":164.8330854320035,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:29:00",
+        "value":60.0,
+        "forecast":58.48582498882707,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:34:00",
+        "value":91.0,
+        "forecast":91.17479468275015,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:39:00",
+        "value":83.0,
+        "forecast":81.82668852769919,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:44:00",
+        "value":68.0,
+        "forecast":69.00762099751614,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:49:00",
+        "value":24.0,
+        "forecast":24.16376253822951,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:54:00",
+        "value":69.0,
+        "forecast":68.45278886183682,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 21:59:00",
+        "value":33.0,
+        "forecast":31.679290841509825,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:04:00",
+        "value":4.0,
+        "forecast":4.588275012044166,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:09:00",
+        "value":209.0,
+        "forecast":205.65657642135483,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:14:00",
+        "value":96.0,
+        "forecast":96.30734075041644,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:19:00",
+        "value":164.0,
+        "forecast":162.85406075785014,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:24:00",
+        "value":10.0,
+        "forecast":11.774643899034254,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:29:00",
+        "value":66.0,
+        "forecast":65.25345267749435,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:34:00",
+        "value":17.0,
+        "forecast":18.283236593409114,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:39:00",
+        "value":39.0,
+        "forecast":40.1066196102372,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:44:00",
+        "value":6.0,
+        "forecast":5.33997581783522,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:49:00",
+        "value":13.0,
+        "forecast":11.889810523073539,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:54:00",
+        "value":42.0,
+        "forecast":41.04083879403337,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 22:59:00",
+        "value":72.0,
+        "forecast":72.87095629242172,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:04:00",
+        "value":93.0,
+        "forecast":92.86628327094755,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:09:00",
+        "value":13.0,
+        "forecast":12.321968013645686,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:14:00",
+        "value":5.0,
+        "forecast":4.321534314743893,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:19:00",
+        "value":9.0,
+        "forecast":8.585975105909464,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:24:00",
+        "value":81.0,
+        "forecast":81.16966396002026,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:29:00",
+        "value":115.0,
+        "forecast":114.22750907840052,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:34:00",
+        "value":261.0,
+        "forecast":261.9201096612699,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:39:00",
+        "value":75.0,
+        "forecast":76.37719239926285,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:44:00",
+        "value":6.0,
+        "forecast":5.432035547515571,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:49:00",
+        "value":10.0,
+        "forecast":10.516754331447174,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:54:00",
+        "value":13.0,
+        "forecast":11.546949507192817,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-23 23:59:00",
+        "value":182.0,
+        "forecast":180.613442015147,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:04:00",
+        "value":29.0,
+        "forecast":29.04500117805857,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:09:00",
+        "value":12.0,
+        "forecast":11.835503900689003,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:14:00",
+        "value":4.0,
+        "forecast":2.999751796001391,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:19:00",
+        "value":32.0,
+        "forecast":32.20148703503837,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:24:00",
+        "value":57.0,
+        "forecast":56.08553385393238,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:29:00",
+        "value":10.0,
+        "forecast":10.214642856275049,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:34:00",
+        "value":18.0,
+        "forecast":19.17952720888488,
+        "is_anomaly":0
+    },
+    {
+        "timestamp":"2025-04-24 00:39:00",
+        "value":60.0,
+        "forecast":58.710713973141736,
+        "is_anomaly":0
+    }
+]

@@ -1,0 +1,266 @@
+{
+  "report_id": "NEXGEN-20251215140910",
+  "title": "数据故障修复报告",
+  "generated_at": "2025-12-15 14:09:10",
+  "metadata": {
+    "version": "1.0.0",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "os_type": "Windows",
+    "report_type": "Data Fault Repair NFT"
+  },
+  "system_info": {
+    "os": "Windows",
+    "os_version": "10.0.26100",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "cpu_count": 16,
+    "memory_total_gb": 15.31,
+    "hostname": "郑李惠杰的电脑",
+    "python_version": "3.13.9"
+  },
+  "error_statistics": {
+    "by_level": {
+      "ERROR": 36
+    },
+    "by_os": {
+      "windows": 36
+    },
+    "unresolved": 36,
+    "auto_fixed": 0,
+    "last_24h": 2
+  },
+  "recent_errors": [
+    {
+      "id": 36,
+      "timestamp": "2025-12-15 12:53:32",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-11-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-12-15 04:53:32"
+    },
+    {
+      "id": 35,
+      "timestamp": "2025-12-15 12:43:10",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"C:\\Users\\ZLHJ2\\OneDrive\\Desktop\\HarmonyOS-intelligent-operation\\.venv\\Lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-11-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-12-15 04:43:10"
+    },
+    {
+      "id": 33,
+      "timestamp": "2025-11-10 00:54:16",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-09 16:54:16"
+    },
+    {
+      "id": 34,
+      "timestamp": "2025-11-10 00:54:16",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-09 16:54:16"
+    },
+    {
+      "id": 31,
+      "timestamp": "2025-11-10 00:54:10",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-09 16:54:10"
+    },
+    {
+      "id": 32,
+      "timestamp": "2025-11-10 00:54:10",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-09 16:54:10"
+    },
+    {
+      "id": 30,
+      "timestamp": "2025-11-10 00:53:59",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-09 16:53:59"
+    },
+    {
+      "id": 28,
+      "timestamp": "2025-11-10 00:48:06",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-09 16:48:06"
+    },
+    {
+      "id": 29,
+      "timestamp": "2025-11-10 00:48:06",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-09 16:48:06"
+    },
+    {
+      "id": 27,
+      "timestamp": "2025-11-08 01:42:05",
+      "level": "ERROR",
+      "module": "Flask",
+      "message": "404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 917, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 891, in dispatch_request\n    self.raise_routing_exception(req)\n  File \"D:\\lib\\site-packages\\flask\\app.py\", line 500, in raise_routing_exception\n    raise request.routing_exception  # type: ignore[misc]\n  File \"D:\\lib\\site-packages\\flask\\ctx.py\", line 362, in match_request\n    result = self.url_adapter.match(return_rule=True)  # type: ignore\n  File \"D:\\lib\\site-packages\\werkzeug\\routing\\map.py\", line 629, in match\n    raise NotFound() from None\nwerkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\n",
+      "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.26100",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "cpu_count": 16,
+        "memory_total": 16438382592,
+        "hostname": "郑李惠杰的电脑"
+      },
+      "os_type": "windows",
+      "resolved": 0,
+      "auto_fixed": 0,
+      "created_at": "2025-11-07 17:42:05"
+    }
+  ],
+  "auto_repair_summary": {
+    "total_errors": 36,
+    "auto_fixed_count": 28,
+    "manually_resolved": 0,
+    "pending_issues": 36,
+    "auto_fix_rate": "77.8%"
+  },
+  "deployment_info": {
+    "deployment_type": "轻量化部署",
+    "multi_os_support": true,
+    "supported_os": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Kylin"
+    ],
+    "auto_ops_enabled": true,
+    "lightweight": true
+  },
+  "nft_attributes": [
+    {
+      "trait_type": "系统状态",
+      "value": "需要关注"
+    },
+    {
+      "trait_type": "主要运行环境",
+      "value": "Windows"
+    },
+    {
+      "trait_type": "严重性",
+      "value": "存在一般错误"
+    }
+  ]
+}

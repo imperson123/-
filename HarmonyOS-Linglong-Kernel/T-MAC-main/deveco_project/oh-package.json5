@@ -1,0 +1,9 @@
+{
+  "name": "t-mac-deveco-wrapper",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "description": "Wrapper project to open T-MAC in DevEco/Harmony Studio",
+  "deviceType": ["phone"],
+  "minPlatformVersion": "1",
+  "appType": "app"
+}

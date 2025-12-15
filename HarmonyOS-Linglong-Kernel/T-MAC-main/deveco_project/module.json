@@ -1,0 +1,10 @@
+{
+  "module": [
+    {
+      "name": "com.tmac.devwrapper",
+      "type": "ace",
+      "appName": "T-MAC DevEco Wrapper",
+      "src": "entry/src/main/ets"
+    }
+  ]
+}
