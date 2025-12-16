@@ -1,7 +1,6 @@
-=======
 ## 项目名称
 鸿蒙玲珑核 — 基于 MLLM 引擎与 T-MAC 的手机端 AI 推理系统 
-鸿蒙玲珑核是一个面向鸿蒙 5.0+ 设备（华为 P70 / Dayu200）的端侧推理方案，聚焦多模态大模型（MLLM）的轻量化与落地。项目采用 MindSpore Lite 作为端侧推理引擎，结合自研 T-MAC 执行框架，实现从模型量化、转换到鸿蒙应用集成与运维的全链路闭环。
+鸿蒙玲珑核是一个面向鸿蒙 5.0+ 设备（华为 P70 / Dayu200）的端侧推理方案，聚焦多模态大模型（MLLM）的轻量化与落地。项目采用 MindSpore Lite 作为端侧推理引擎，结合 T-MAC 执行框架，实现从模型量化、转换到鸿蒙应用集成与运维的全链路闭环。
 
 目录结构（顶层）
 - `Harmonyos-Application/`：鸿蒙应用前端（ArkTS/接口适配层）。
@@ -63,6 +62,7 @@
 
 采用"测试维度-指标-结果"的结构化分析框架，对鸿蒙玲珑核推理系统进行全面验证。测试环境基于 HarmonyOS 智能终端部署，通过 DevEco Studio 与 ADB 工具链将应用程序及量化模型下发至 P70 手机与 Dayu200 开发板，实机验证覆盖功能完整性、性能表现、系统稳定性及运维监控能力四大维度。
 功能测试
+
 功能验证聚焦前端交互与推理结果的一致性，通过模拟用户典型操作场景，验证系统端到端处理能力。测试结果显示：前端推理调用接口响应正常，在文本生成、图像识别等典型任务中均能返回符合预期的结构化结果；UI 层采用自适应渲染引擎，可根据推理结果类型（如长文本、热力图、3D 点云）自动调整展示形式，确保输出内容的可读性与直观性。系统在异常输入场景下（如非结构化数据、超大尺寸图像）触发预设降级策略，通过返回标准化错误码与处理建议实现 graceful degradation。
 性能测试
 性能测试重点评估模型量化前后的关键指标变化，采用高精度功耗仪（采样率 1kHz）与系统级性能分析工具同步采集数据。测试结果表明：INT8 量化模型较原始 FP32 模型实现显著优化，单次推理耗时降低 60%，在 P70 终端上实现 200ms 级文本生成延迟；能源效率方面，平均功耗降低 45%，峰值功耗控制在 2.3W 以内，满足手机端持续推理的续航需求。冷启动时间优化至 1.8s，热启动时间稳定在 300ms 以下，达到商用级应用标准。
@@ -83,9 +83,27 @@
 
 ## 协作者
 聂君奋，卫珈豪，杨政，李升彦
->>>>>>> 9596efcb6333f86a5e76d6922c67a19c123d4dc7
 
+## 协作者
+项目现已开源至github仓库
+https://github.com/imperson123/-.git
+压缩模型如下链接：
+通过网盘分享的文件：鸿蒙玲珑核压缩模型.zip
+链接: https://pan.baidu.com/s/1IfVfE3xZPB_RBvQlamvrDQ?pwd=n8cr 提取码: n8cr
 ## 参考
-- MindSpore 官网：https://www.mindspore.cn/ （含 Lite 工具链与文档）
-- HarmonyOS SDK/NDK & DevEco Studio 文档
-- 项目内 `HarmonyOS-Linglong-Kernel/mllm-main` 量化与推理示例代码
+一.学术引用
+[1] Disentangled Loss for Low-Bit Quantization-Aware Training[C]. CVPR, 2022.
+[2] Benchmarking of Quantization Libraries in Popular Frameworks[C]. IEEE BigData, 2021.
+[3] Low-latency MLLM Inference with Spatiotemporal Heterogeneous Distributed Multimodal Data[C]. IEEE CSCAIoT, 2024.
+[4] MQTT Third-party Library Porting Method and Application Based on the OpenHarmony Standard System[C]. IEEE NaNA, 2024.
+[5] Application of MindSpore-based waste classification detection technique[C]. IEEE YAC, 2024.
+[6] Parrot: Efficient Serving of LLM-based Applications with Semantic Variable[C]. USENIX OSDI, 2024.
+[7] Optimizing the Memory Hierarchy by Compositing Automatic Transformations on Computations and Data[J]. ACM Transactions on Architecture and Code Optimization, 2023.
+二 技术文档参考
+[8] 华为. MindSpore Lite 官方文档[EB/OL]. https://www.mindspore.cn/lite/docs/zh-CN/r2.2/, 2025.
+HarmonyOS SDK/NDK & DevEco Studio 文档
+项目内 `HarmonyOS-Linglong-Kernel/mllm-main` 量化与推理示例代码
+[9] 华为. HarmonyOS 应用开发文档[EB/OL]. https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-guide, 2025.
+[10] 润和软件. Dayu200 开发板技术手册[Z]. 2024.
+[11] 华为终端. 华为 P70 设备开发指南[Z]. 2025.
+（注：文献[10][11]基于第三方公开资料整理，无官方正式出版物编号）
