@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" modified="2026-07-24T18:10:00.000Z" agent="fandou-t-mac" version="24.7.5" type="device">
+  <diagram name="sequence-phase1" id="seq-phase1">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" page="1" pageWidth="1300" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="brand" value="FANDOU-T-MAC" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;letterSpacing=2;fontColor=#7A0014;" vertex="1" parent="1">
+          <mxGeometry x="32" y="20" width="160" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="title" value="调用时序 · 端侧 LUT 加速推理（一次 Generate）" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="220" y="12" width="820" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="关键指标 · TTFT = CreateSession 完成 → 首 token 返回" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#5A4400;" vertex="1" parent="1">
+          <mxGeometry x="220" y="38" width="820" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="rule0" value="" style="endArrow=none;html=1;strokeColor=#E5E5E5;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="32" y="76" as="sourcePoint"/><mxPoint x="1268" y="76" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="a0" value="Demo App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;dropTarget=0;portConstraint=eastwest;size=26;fillColor=#F4F8FF;strokeColor=#2D5CF6;strokeWidth=1;fontStyle=1;fontSize=12;fontColor=#15235C;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="100" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="a1" value="SAMgr" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;dropTarget=0;portConstraint=eastwest;size=26;fillColor=#FFFDF6;strokeColor=#B08900;strokeWidth=1;fontStyle=1;fontSize=12;fontColor=#5A4400;" vertex="1" parent="1">
+          <mxGeometry x="260" y="100" width="100" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" value="LUT SA" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;dropTarget=0;portConstraint=eastwest;size=26;fillColor=#FFF6F6;strokeColor=#C7000B;strokeWidth=1.2;fontStyle=1;fontSize=12;fontColor=#7A0014;" vertex="1" parent="1">
+          <mxGeometry x="440" y="100" width="100" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" value="Native Lib" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;dropTarget=0;portConstraint=eastwest;size=26;fillColor=#F4F8FF;strokeColor=#2D5CF6;strokeWidth=1.2;fontStyle=1;fontSize=12;fontColor=#15235C;" vertex="1" parent="1">
+          <mxGeometry x="620" y="100" width="110" height="520" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" value="LUT Kernel" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;dropTarget=0;portConstraint=eastwest;size=26;fillColor=#F4F8FF;strokeColor=#2D5CF6;strokeWidth=1.2;fontStyle=1;fontSize=12;fontColor=#15235C;" vertex="1" parent="1">
+          <mxGeometry x="820" y="100" width="110" height="520" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m1" value="GetSystemAbility(LUT_SA_ID)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;strokeColor=#2D5CF6;strokeWidth=1.5;" edge="1" parent="1" source="a0" target="a1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="130" y="160" as="sourcePoint"/><mxPoint x="310" y="160" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="proxy" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;strokeColor=#9A9A9A;" edge="1" parent="1" source="a1" target="a0">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="310" y="190" as="sourcePoint"/><mxPoint x="130" y="190" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="m3" value="1  CreateSession(model_id, bits)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;fontStyle=1;strokeColor=#C7000B;strokeWidth=1.8;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="130" y="240" as="sourcePoint"/><mxPoint x="490" y="240" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m4" value="2  InitBuffers / LoadLUT" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;strokeColor=#2D5CF6;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="490" y="280" as="sourcePoint"/><mxPoint x="675" y="280" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m5" value="ok" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=10;strokeColor=#9A9A9A;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="675" y="310" as="sourcePoint"/><mxPoint x="490" y="310" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="m6" value="3  Generate(prompt, opts)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;fontStyle=1;strokeColor=#C7000B;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="130" y="370" as="sourcePoint"/><mxPoint x="490" y="370" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m7" value="ApplySchedule(prio)" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;dashed=1;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=10;strokeColor=#B08900;strokeWidth=1.2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="490" y="400" as="sourcePoint"/><mxPoint x="490" y="430" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m8" value="4  InferTokenBatch" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;strokeColor=#2D5CF6;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="490" y="460" as="sourcePoint"/><mxPoint x="675" y="460" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m9" value="5  mpGEMM / LUT lookup" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;strokeColor=#2D5CF6;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="675" y="500" as="sourcePoint"/><mxPoint x="875" y="500" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m10" value="first token" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=11;fontStyle=1;strokeColor=#C7000B;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="875" y="535" as="sourcePoint"/><mxPoint x="130" y="535" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m11" value="partial tokens" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;fontSize=10;strokeColor=#9A9A9A;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="875" y="570" as="sourcePoint"/><mxPoint x="130" y="570" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="TTFT" value="" style="endArrow=open;html=1;startArrow=open;strokeColor=#C7000B;strokeWidth=1.2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="965" y="230" as="sourcePoint"/><mxPoint x="965" y="545" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="TTFTl" value="TTFT" style="text;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#7A0014;" vertex="1" parent="1">
+          <mxGeometry x="975" y="370" width="60" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lgBar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#E5E5E5;" vertex="1" parent="1">
+          <mxGeometry x="80" y="636" width="1140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="legT" value="图例 · LEGEND" style="text;html=1;align=left;fontSize=10;fontStyle=1;fontColor=#6B6B6B;letterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="96" y="646" width="120" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="legE1" value="" style="endArrow=block;html=1;strokeColor=#C7000B;strokeWidth=2;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="legET1" value="主调用" style="text;html=1;align=left;fontSize=10;fontColor=#7A0014;" vertex="1" parent="1">
+          <mxGeometry x="232" y="648" width="80" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legE2" value="" style="endArrow=block;html=1;strokeColor=#2D5CF6;strokeWidth=1.5;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="legET2" value="内部调用" style="text;html=1;align=left;fontSize=10;fontColor=#15235C;" vertex="1" parent="1">
+          <mxGeometry x="352" y="648" width="100" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legE3" value="" style="endArrow=block;html=1;strokeColor=#B08900;strokeWidth=1.2;dashed=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="legET3" value="调度" style="text;html=1;align=left;fontSize=10;fontColor=#5A4400;" vertex="1" parent="1">
+          <mxGeometry x="500" y="648" width="80" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legE4" value="" style="endArrow=open;html=1;dashed=1;strokeColor=#9A9A9A;endSize=8;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="legET4" value="异步返回" style="text;html=1;align=left;fontSize=10;fontColor=#6B6B6B;" vertex="1" parent="1">
+          <mxGeometry x="640" y="648" width="100" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="legE5" value="" style="endArrow=open;html=1;startArrow=open;strokeColor=#C7000B;strokeWidth=1.2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="legET5" value="TTFT 区间" style="text;html=1;align=left;fontSize=10;fontColor=#7A0014;" vertex="1" parent="1">
+          <mxGeometry x="800" y="648" width="100" height="14" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="src" value="依据 · ADR-0001 · docs/knowledge.md" style="text;html=1;align=left;fontSize=9;fontColor=#9A9A9A;" vertex="1" parent="1">
+          <mxGeometry x="80" y="684" width="600" height="14" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

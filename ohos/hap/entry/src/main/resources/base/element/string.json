@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "LUT-SA 端侧低比特推理演示"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "LUT-SA 端侧低比特推理演示能力"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "鸿蒙玲珑核"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+/(system/bin/lut_sa|/system/lib64/libtmac_sa\.z\.so) u:object_r:lut_sa_exec:s0
+/system/profile/lut_sa\.json u:object_r:system_file:s0
+/system/etc/init/lut_sa\.cfg u:object_r:system_file:s0

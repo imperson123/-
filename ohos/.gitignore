@@ -1,0 +1,7 @@
+﻿# OHOS local build / staging (regenerate via scripts)
+build/
+hello/build/
+staging/
+*.log
+P2_cmake_log*.txt
+P2_build_log.txt

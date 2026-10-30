@@ -1,0 +1,12 @@
+{
+  "name": "lut_sa",
+  "process": "tmac_sa",
+  "systemability": [
+    {
+      "name": "LutSystemAbility",
+      "libpath": "libtmac_sa.z.so",
+      "run-on": "startup",
+      "bootphase": "BootStartup"
+    }
+  ]
+}

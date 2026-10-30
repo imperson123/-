@@ -1,5 +1,0 @@
-Tasks:
-  - BuildDocTask:
-      place: build
-      type: html
-      enable_doxygen: false

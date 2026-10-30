@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net" modified="2026-07-24T18:10:00.000Z" agent="fandou-t-mac" version="24.7.5" type="device">
+  <diagram name="architecture-phase1" id="arch-phase1">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" page="1" pageWidth="1200" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="brand" value="FANDOU-T-MAC" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;letterSpacing=2;fontColor=#7A0014;" vertex="1" parent="1">
+          <mxGeometry x="48" y="24" width="160" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="title" value="LUT 驱动的低比特 LLM 系统级加速服务" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="220" y="14" width="760" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="主线：T-MAC LUT Kernel → 用户态 SystemAbility → 端侧推理加速" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#5A4400;" vertex="1" parent="1">
+          <mxGeometry x="220" y="44" width="760" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ver" value="v1.1 · 2026-07-24" style="text;html=1;align=right;verticalAlign=middle;fontSize=10;fontColor=#9A9A9A;" vertex="1" parent="1">
+          <mxGeometry x="980" y="24" width="170" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="rule0" value="" style="endArrow=none;html=1;strokeColor=#E5E5E5;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="48" y="80" as="sourcePoint"/><mxPoint x="1152" y="80" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="L1" value="L1  应用层" style="swimlane;startSize=26;horizontal=1;fillColor=#FFFFFF;strokeColor=#D5D5D5;fontStyle=1;fontSize=12;fontColor=#222222;html=1;" vertex="1" parent="1">
+          <mxGeometry x="64" y="104" width="520" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="app" value="&lt;b&gt;演示 App&lt;/b&gt;&lt;br&gt;ArkTS / Native Client" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F8FF;strokeColor=#2D5CF6;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;fontColor=#15235C;" vertex="1" parent="L1">
+          <mxGeometry x="180" y="36" width="200" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="L2" value="L2  感知与调度" style="swimlane;startSize=26;horizontal=1;fillColor=#FFFFFF;strokeColor=#D5D5D5;fontStyle=1;fontSize=12;fontColor=#222222;html=1;" vertex="1" parent="1">
+          <mxGeometry x="64" y="200" width="520" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sense" value="&lt;b&gt;行为信号&lt;/b&gt;&lt;br&gt;通知 · 传感器 · 桌面状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF6;strokeColor=#B08900;strokeWidth=1;fontSize=11;fontColor=#5A4400;" vertex="1" parent="L2">
+          <mxGeometry x="40" y="36" width="200" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="sched" value="&lt;b&gt;调度策略&lt;/b&gt;&lt;br&gt;优先级 · 预取 · 节流" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF6;strokeColor=#B08900;strokeWidth=1;fontSize=11;fontColor=#5A4400;" vertex="1" parent="L2">
+          <mxGeometry x="280" y="36" width="200" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="L3" value="L3  系统服务层（用户态 SystemAbility）" style="swimlane;startSize=26;horizontal=1;fillColor=#FFFFFF;strokeColor=#D5D5D5;fontStyle=1;fontSize=12;fontColor=#222222;html=1;" vertex="1" parent="1">
+          <mxGeometry x="64" y="296" width="520" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="sa" value="&lt;b&gt;LUT SystemAbility&lt;/b&gt;&lt;br&gt;SAMgr 注册 · IPC 对外" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF6F6;strokeColor=#C7000B;strokeWidth=1.2;fontSize=11;fontColor=#7A0014;" vertex="1" parent="L3">
+          <mxGeometry x="40" y="36" width="200" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="ndk" value="&lt;b&gt;Native 加速库&lt;/b&gt;&lt;br&gt;NDK · 会话 · 缓冲" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF6F6;strokeColor=#C7000B;strokeWidth=1.2;fontSize=11;fontColor=#7A0014;" vertex="1" parent="L3">
+          <mxGeometry x="280" y="36" width="200" height="46" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="L4" value="L4  计算核心（T-MAC 二开）" style="swimlane;startSize=26;horizontal=1;fillColor=#FFFFFF;strokeColor=#D5D5D5;fontStyle=1;fontSize=12;fontColor=#222222;html=1;" vertex="1" parent="1">
+          <mxGeometry x="64" y="404" width="520" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="lut" value="&lt;b&gt;LUT Kernel&lt;/b&gt;&lt;br&gt;比特级查找表 · 低比特 mpGEMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F8FF;strokeColor=#2D5CF6;strokeWidth=1.2;fontSize=11;fontColor=#15235C;" vertex="1" parent="L4">
+          <mxGeometry x="40" y="36" width="220" height="46" as="geometry"/>
+        </mxCell>
+        <mxCell id="tman" value="&lt;b&gt;部署工具链&lt;/b&gt;&lt;br&gt;t-man · 权重 / LUT 生成" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F8FF;strokeColor=#2D5CF6;strokeWidth=1.2;fontSize=11;fontColor=#15235C;" vertex="1" parent="L4">
+          <mxGeometry x="280" y="36" width="200" height="46" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eval" value="对照与验证" style="swimlane;startSize=26;horizontal=1;fillColor=#FAFAFA;strokeColor=#D5D5D5;fontStyle=1;fontSize=12;fontColor=#222222;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="200" width="320" height="296" as="geometry"/>
+        </mxCell>
+        <mxCell id="llama" value="&lt;b&gt;基线对照&lt;/b&gt;&lt;br&gt;llama.cpp" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#222222;strokeWidth=1;fontSize=11;fontColor=#222222;" vertex="1" parent="eval">
+          <mxGeometry x="40" y="40" width="240" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="metrics" value="&lt;b&gt;评测指标&lt;/b&gt;&lt;br&gt;TTFT · 吞吐 · 能耗" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDF6;strokeColor=#B08900;strokeWidth=1;fontSize=11;fontColor=#5A4400;" vertex="1" parent="eval">
+          <mxGeometry x="40" y="96" width="240" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="report" value="&lt;b&gt;测试报告&lt;/b&gt;&lt;br&gt;公开数据 + 移植计划" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F8FF;strokeColor=#2D5CF6;strokeWidth=1;fontSize=11;fontColor=#15235C;" vertex="1" parent="eval">
+          <mxGeometry x="40" y="152" width="240" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="&lt;b style='color:#C7000B'&gt;P1&lt;/b&gt; CANN / NPU 对照&#xa;&lt;b style='color:#B08900'&gt;P2&lt;/b&gt; 软总线轻演示" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#6B6B6B;" vertex="1" parent="eval">
+          <mxGeometry x="40" y="208" width="240" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" edge="1" parent="1" source="app" target="sa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#C7000B;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e1l" value="IPC / SA API" style="edgeLabel;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#7A0014;" vertex="1" connectable="0" parent="e1"><mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry></mxCell>
+
+        <mxCell id="e2" edge="1" parent="1" source="sense" target="sched" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#B08900;strokeWidth=1.2;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="sched" target="sa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#B08900;strokeWidth=1.2;">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3l" value="优先级 / 预取" style="edgeLabel;html=1;align=center;fontSize=10;fontColor=#7A5800;" vertex="1" connectable="0" parent="e3"><mxGeometry x="-0.2" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry></mxCell>
+
+        <mxCell id="e4" edge="1" parent="1" source="sa" target="ndk" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#C7000B;strokeWidth=1.2;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="ndk" target="lut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#2D5CF6;strokeWidth=1.8;">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5l" value="Native call" style="edgeLabel;html=1;align=center;fontSize=10;fontColor=#15235C;" vertex="1" connectable="0" parent="e5"><mxGeometry x="-0.1" relative="1" as="geometry"><mxPoint as="offset"/></mxGeometry></mxCell>
+
+        <mxCell id="e6" edge="1" parent="1" source="tman" target="lut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#2D5CF6;strokeWidth=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="lut" target="metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;dashed=1;strokeColor=#9A9A9A;strokeWidth=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="llama" target="metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#222222;strokeWidth=1.2;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="metrics" target="report" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#2D5CF6;strokeWidth=1.2;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="lgBar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#E5E5E5;" vertex="1" parent="1">
+          <mxGeometry x="64" y="524" width="896" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="lgT" value="图例 · LEGEND" style="text;html=1;align=left;fontSize=10;fontStyle=1;fontColor=#6B6B6B;letterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="530" width="160" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg1" value="" style="endArrow=block;html=1;strokeColor=#C7000B;strokeWidth=1.8;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="lg1l" value="主调用" style="text;html=1;align=left;fontSize=11;fontColor=#7A0014;" vertex="1" parent="1">
+          <mxGeometry x="200" y="548" width="120" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg2" value="" style="endArrow=block;html=1;strokeColor=#2D5CF6;strokeWidth=1.8;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="lg2l" value="内部连接" style="text;html=1;align=left;fontSize=11;fontColor=#15235C;" vertex="1" parent="1">
+          <mxGeometry x="360" y="548" width="120" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg3" value="" style="endArrow=block;html=1;strokeColor=#B08900;strokeWidth=1.2;dashed=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="lg3l" value="调度 / 控制" style="text;html=1;align=left;fontSize=11;fontColor=#5A4400;" vertex="1" parent="1">
+          <mxGeometry x="520" y="548" width="120" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg4" value="" style="endArrow=block;html=1;strokeColor=#9A9A9A;strokeWidth=1;dashed=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="lg4l" value="对照 / 报告" style="text;html=1;align=left;fontSize=11;fontColor=#6B6B6B;" vertex="1" parent="1">
+          <mxGeometry x="680" y="548" width="120" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bound" value="边界声明 · 不修改 OS 内核；仅在用户态封装 LUT 内核并以 SA 暴露能力" style="text;html=1;align=left;fontSize=10;fontColor=#6B6B6B;" vertex="1" parent="1">
+          <mxGeometry x="64" y="604" width="700" height="18" as="geometry"/>
+        </mxCell>
+        <mxCell id="src" value="依据 · ADR-0001 · docs/knowledge.md" style="text;html=1;align=left;fontSize=9;fontColor=#9A9A9A;" vertex="1" parent="1">
+          <mxGeometry x="64" y="626" width="700" height="16" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

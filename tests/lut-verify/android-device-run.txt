@@ -1,0 +1,29 @@
+# Android 真机验证原始记录 · 2026-09-28
+
+设备：vivo V2323A（iQOO Neo9）· Android 16 · arm64-v8a · native bridge = 0（原生执行）
+二进制：arm64_kernel_test_android（OHOS SDK clang 交叉编译，全静态 musl，
+        -march=armv8.2a+fp16，848952 字节，指令集安检：仅 NEON fmla×78，零 dotprod/SVE）
+数据：BitNet-3B 真实 ffn_gate 权重（A.bin 6912004B）+ NumPy 参考答案（Cref.bin）
+执行：adb shell /data/local/tmp/arm64_kernel_test_android /data/local/tmp/vdata 64
+
+--- 原始输出 ---
+scale 0.01580441 -> fp16 0.01580811 x256
+preproc ret=0 | qlut[0..3]=41 127 27 113 | ls[0]=0.040710 lb[0]=1.533203
+chunk_rows=64 n_chunks=135 qgemm ret=0
+C_arm64[0..3]: 0.415039 -0.037109 -0.086853 -0.185547
+C_arm64[128..131]: -0.054199 0.253662 -0.447510 0.232056
+ARM64_DONE
+--- C vs Cref（PC 侧计算，N=8640）---
+NMSE = 8.397e-05   max_abs_err = 0.025883   -> PASS
+
+# 交叉对照
+| 环境 | NMSE | 说明 |
+|---|---|---|
+| qemu-aarch64（TCG，2026-09-27） | 8.397e-05 | ARM64-VALIDATION.md |
+| **vivo V2323A 真机（本记录）** | **8.397e-05** | **与 qemu 逐位一致 —— 跨模拟器/真硅确定性成立** |
+| x64-ags64-f32 + chunk=64（WSL） | 8.765e-05 | tests/lut-verify/README.md |
+
+qlut[0..3]=41/127/27/113 在 x86 / qemu / 真机三环境逐位一致。
+结论：aarch64 NEON LUT 内核在真实安卓硬件上数值正确；当年"能跑不输出"
+的病根（fp16 契约 / kcfg 配对 / scales 广播，见 docs/ANDROID-FIX.md）
+与本内核无关——按本工具链配对使用即得正确输出。

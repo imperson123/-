@@ -1,0 +1,26 @@
+# LUT-SA 系统服务 SELinux 策略（编入产品 sepolicy；本机无法运行时验证，见 README）
+type lut_sa, domain;
+type lut_sa_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(lut_sa)
+
+# 与 samgr 通信：注册自身（add）与查找其他服务（find）
+allow lut_sa samgr_service:service_manager { add find };
+
+# 作为 SA 的通用许可（与 samgr 交互所需）
+allow lut_sa samgr_service:samgr_class { get add };
+allow lut_sa samgr_service:ipc { call };
+
+# 客户端（应用等）经 IPC 调用本服务：由客户端域策略负责 find/call，本服务侧需允许 ipc 回包
+allow lut_sa self:ipc { call };
+allow lut_sa self:process { fork sigchld signal };
+
+# 读取模型文件（应用沙箱/公共目录二选一，按实际投放位置收紧）
+allow lut_sa appdata_file:file { open read getattr map };
+allow lut_sa appdata_file:dir { search open read };
+allow lut_sa data_file_type:file { open read getattr map };
+
+# 基础资源
+allow lut_sa self:capability { setuid setgid };
+allow lut_sa hilog_device:chr_file { open read write ioctl };
+allow lut_sa dev_console:chr_file { open read write ioctl };

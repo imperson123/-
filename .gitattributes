@@ -1,0 +1,3 @@
+# 强制钩子与属性文件 LF 行尾（CRLF 会让 pre-commit / 模式匹配失效）
+/.gitattributes text eol=lf
+.githooks/* text eol=lf

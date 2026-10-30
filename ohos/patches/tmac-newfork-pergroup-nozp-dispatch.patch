@@ -1,0 +1,125 @@
+diff --git a/common/common.cpp b/common/common.cpp
+index 93c6bbb..c433dc4 100644
+--- a/common/common.cpp
++++ b/common/common.cpp
+@@ -120,7 +120,7 @@ int32_t cpu_get_num_physical_cores() {
+     return n_threads > 0 ? (n_threads <= 4 ? n_threads : n_threads / 2) : 4;
+ }
+ 
+-#if defined(__x86_64__) && defined(__linux__) && !defined(__ANDROID__)
++#if defined(__x86_64__) && defined(__linux__) && !defined(__ANDROID__) && !defined(__MUSL__)
+ #include <pthread.h>
+ 
+ static void cpuid(unsigned leaf, unsigned subleaf,
+@@ -174,7 +174,7 @@ static int cpu_count_math_cpus(int n_cpu) {
+  * Returns number of CPUs on system that are useful for math.
+  */
+ int32_t cpu_get_num_math() {
+-#if defined(__x86_64__) && defined(__linux__) && !defined(__ANDROID__)
++#if defined(__x86_64__) && defined(__linux__) && !defined(__ANDROID__) && !defined(__MUSL__)
+     int n_cpu = sysconf(_SC_NPROCESSORS_ONLN);
+     if (n_cpu < 1) {
+         return cpu_get_num_physical_cores();
+diff --git a/convert_hf_to_gguf.py b/convert_hf_to_gguf.py
+index fa729c9..3ceb95d 100755
+--- a/convert_hf_to_gguf.py
++++ b/convert_hf_to_gguf.py
+@@ -2287,9 +2287,17 @@ class BitnetModel(Model):
+                 # transform weight into TMAC_BN_0 format
+                 from gguf.tmac_utils import preprocess_for_t_mac
+                 data = LazyTorchTensor.to_eager(data_torch).numpy()
+-                scale = np.max(np.abs(data))
+-                w = np.round(data / scale + 2).astype(np.uint8)
+-                data_torch = torch.from_numpy(preprocess_for_t_mac(w, scale.reshape(1), bits=2))
++                # (fandou fix) per-group (g=64) ternary quantization with GROUP scales:
++                # the runtime kernels (q_group_size=64) read one f32 scale per 64-element
++                # group, stored right after the packed data (tensor->data + k*m/8).
++                # The stock WIP code wrote a single per-tensor scale and segfaulted.
++                g = 64
++                m, k = data.shape
++                assert k % g == 0, (m, k, g)
++                xg = data.reshape(m, k // g, g)
++                sg = np.maximum(np.abs(xg).max(axis=2), 1e-5).astype(np.float32)
++                w = np.round(xg / sg[:, :, None] + 2).clip(1, 3).astype(np.uint8).reshape(m, k)
++                data_torch = torch.from_numpy(preprocess_for_t_mac(w, sg.reshape(-1), bits=2))
+                 self.quantization_config["bits"] = 2
+                 # self.quantization_config["group_size"] = 256
+                 self.quantization_config["sym"] = True
+diff --git a/ggml/src/ggml-cpu/tmac/lut_mul_mat.cpp b/ggml/src/ggml-cpu/tmac/lut_mul_mat.cpp
+index 53be7c6..53f36dc 100644
+--- a/ggml/src/ggml-cpu/tmac/lut_mul_mat.cpp
++++ b/ggml/src/ggml-cpu/tmac/lut_mul_mat.cpp
+@@ -15,10 +15,18 @@
+ 
+ #define GGML_USE_TMAC
+ #if defined(GGML_USE_TMAC)
++static inline void ggml_tmac_transform_tensor(struct ggml_tensor * tensor, const void * origin_data);
+ 
+ namespace ggml::cpu::tmac {
+     bool tensor_traits::work_size(int /* n_threads */, const struct ggml_tensor * op, size_t & size) {
+         if (ggml_tmac_can_mul_mat(op)) {
++            struct ggml_tensor * src0 = op->src[0];
++            if (src0->extra != nullptr &&
++                ((ggml::cpu::tmac::tensor_traits *) src0->extra)->get_tmac_tensor_extra(src0->name) == nullptr) {
++                // (fandou fix) lazy conversion: the loader may bypass set_tensor, leaving the raw
++                // file bytes un-repacked and unregistered -> do it here, once, at graph plan time.
++                ggml_tmac_transform_tensor(src0, src0->data);
++            }
+             size = ggml_backend_tmac_desired_wsize(op);
+             return true;
+         }
+diff --git a/ggml/src/ggml-cpu/tmac/tbl.cpp b/ggml/src/ggml-cpu/tmac/tbl.cpp
+index 52f398f..0a2837b 100644
+--- a/ggml/src/ggml-cpu/tmac/tbl.cpp
++++ b/ggml/src/ggml-cpu/tmac/tbl.cpp
+@@ -862,7 +862,21 @@ void qgemm_lut_int8_g4(
+             tbl_g4_int8_float_update_impl<true, 16, 2, 16, false, false, true>(
+                 (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
+         }
+-        
++
++        // per-group scales WITHOUT zero point (BitNet ternary, q_group_size=64).
++        // The generic impl already implements this as its final else-branch; these
++        // dispatch entries were missing, so the loop silently left CBits at zero.
++        else if (has_scale && kfactor == 8 && bits == 2 && actk == 8 && !has_zero_point && !one_scale) {
++            tbl_g4_int8_float_update_impl<true, 8, 2, 8, false, false, false>(
++                (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
++        } else if (has_scale && kfactor == 16 && bits == 2 && actk == 8 && !has_zero_point && !one_scale) {
++            tbl_g4_int8_float_update_impl<true, 16, 2, 8, false, false, false>(
++                (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
++        } else if (has_scale && kfactor == 16 && bits == 2 && actk == 16 && !has_zero_point && !one_scale) {
++            tbl_g4_int8_float_update_impl<true, 16, 2, 16, false, false, false>(
++                (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
++        }
++
+         else if (has_scale && kfactor == 8 && bits == 4 && actk == 8 && has_zero_point && !one_scale) {
+             tbl_g4_int8_float_update_impl<true, 8, 4, 8, false, true, false>(
+                 (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
+@@ -882,6 +896,18 @@ void qgemm_lut_int8_g4(
+             tbl_g4_int8_float_update_impl<true, 16, 4, 16, false, false, true>(
+                 (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
+         }
++
++        // same gap as above, 4-bit case
++        else if (has_scale && kfactor == 8 && bits == 4 && actk == 8 && !has_zero_point && !one_scale) {
++            tbl_g4_int8_float_update_impl<true, 8, 4, 8, false, false, false>(
++                (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
++        } else if (has_scale && kfactor == 16 && bits == 4 && actk == 8 && !has_zero_point && !one_scale) {
++            tbl_g4_int8_float_update_impl<true, 16, 4, 8, false, false, false>(
++                (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
++        } else if (has_scale && kfactor == 16 && bits == 4 && actk == 16 && !has_zero_point && !one_scale) {
++            tbl_g4_int8_float_update_impl<true, 16, 4, 16, false, false, false>(
++                (int32_t)bm, CBits, lut, a, scales, lut_scales, lut_biases);
++        }
+     }
+     // if (!(((uint8_t *)A)[0] == 0 && ((uint8_t *)A)[1] == 0 && ((uint8_t *)A)[2] == 0 && ((uint8_t *)A)[3] == 0
+     //     && ((uint8_t *)A)[4] == 0 && ((uint8_t *)A)[5] == 0 && ((uint8_t *)A)[6] == 0 && ((uint8_t *)A)[7] == 0)) {
+diff --git a/gguf-py/gguf/tmac_utils.py b/gguf-py/gguf/tmac_utils.py
+index f1bce24..e7537d5 100644
+--- a/gguf-py/gguf/tmac_utils.py
++++ b/gguf-py/gguf/tmac_utils.py
+@@ -1,3 +1,4 @@
++from __future__ import annotations
+ import json
+ import logging
+ import numpy as np

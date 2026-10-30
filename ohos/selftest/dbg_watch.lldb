@@ -1,0 +1,9 @@
+settings set target.disable-aslr true
+b qgemm_lut_t1_int8_m128_k3200_n1_b2
+run
+register read rsp
+watchpoint set expression -w write -s 8 -- $rsp
+continue
+register read rip rsp rbp rdi rsi rdx rcx
+bt
+quit

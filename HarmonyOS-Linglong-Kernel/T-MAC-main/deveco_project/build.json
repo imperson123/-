@@ -1,6 +1,0 @@
-{
-  "build": {
-    "compileType": "debug",
-    "targets": ["emulator", "device"]
-  }
-}

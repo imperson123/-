@@ -1,0 +1,58 @@
+# LUT-SA SystemAbility —— OH 子系统组件构建脚本
+# 目标：libtmac_sa.z.so 装入 /system/lib64；sa_profile 与 init cfg 装入 /system/{profile,etc/init}
+import("//build/ohos.gni")
+
+ohos_shared_library("lut_sa") {
+  sources = [
+    "lut_sa_ability.cpp",          # samgr 绑定（SystemAbility 基类 + REGISTER_SYSTEM_ABILITY_BY_ID）
+    "../../sa/lut_sa.cpp",         # 业务内核（会话/加载/暖机/释放）
+    "../../sa/session_workspace.cpp",
+    "../../sa/tile_compute.cpp",
+    "../../sa/tile_pool.cpp",
+    "../../sched/qos_policy.cpp",
+    "lut_sa_idl_stub.cpp",         # 由 ILutSa.idl 生成后落地（见 README）
+  ]
+  include_dirs = [
+    "../../sa", "../../sched",
+    "//foundation/systemabilitymgr/safwk/interfaces/innerkits",
+    "//foundation/systemabilitymgr/samgr/interfaces/innerkits/samgr_proxy/include",
+    "//foundation/communication/ipc/interfaces/innerkits/ipc_core/include",
+  ]
+  public_deps = [
+    "//foundation/systemabilitymgr/safwk:system_ability_fwk",
+    "//foundation/systemabilitymgr/samgr:samgr_proxy",
+    "//foundation/communication/ipc:ipc_core",
+    "//base/hiviewdfx/hilog/interfaces/native/innerkits:libhilog",
+  ]
+  # LUT 引擎：预编译静态库（随仓库提交，双 ABI）
+  if (target_cpu == "arm64") {
+    libs = [ "../../../ohos/hap/prebuilt/arm64-v8a/libllama.a", "../../../ohos/hap/prebuilt/arm64-v8a/libggml.a" ]
+  } else {
+    libs = [ "../../../ohos/hap/prebuilt/x86_64/libllama.a", "../../../ohos/hap/prebuilt/x86_64/libggml.a" ]
+  }
+  install_enable = true
+  install_images = [ "system" ]     # ← 关键：编进 system 分区
+  part_name = "lut_sa"
+  subsystem_name = "fandou"
+  output_name = "libtmac_sa.z"
+}
+
+ohos_prebuilt_etc("lut_sa_profile") {
+  source = "sa_profile/lut_sa.json"
+  relative_install_dir = "profile"   # → /system/profile/lut_sa.json
+  install_images = [ "system" ]
+  part_name = "lut_sa"
+  subsystem_name = "fandou"
+}
+
+ohos_prebuilt_etc("lut_sa_init_cfg") {
+  source = "etc/init/lut_sa.cfg"
+  relative_install_dir = "etc/init"  # → /system/etc/init/lut_sa.cfg
+  install_images = [ "system" ]
+  part_name = "lut_sa"
+  subsystem_name = "fandou"
+}
+
+group("lut_sa_package") {
+  deps = [ ":lut_sa", ":lut_sa_profile", ":lut_sa_init_cfg" ]
+}

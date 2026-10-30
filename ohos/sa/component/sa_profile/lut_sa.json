@@ -1,0 +1,13 @@
+{
+  "process": "lut_sa",
+  "systemability": [
+    {
+      "name": 6901,
+      "libpath": "libtmac_sa.z.so",
+      "run-on-create": true,
+      "distributed": false,
+      "dump-level": 1,
+      "auto-restart": true
+    }
+  ]
+}

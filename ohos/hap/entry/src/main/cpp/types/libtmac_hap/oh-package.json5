@@ -1,0 +1,6 @@
+{
+  "name": "libtmac_hap.so",
+  "types": "./index.d.ts",
+  "version": "1.0.0",
+  "description": "LUT-SA T-MAC native module types"
+}

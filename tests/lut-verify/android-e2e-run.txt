@@ -1,0 +1,41 @@
+# Android 真机端到端 LLM 推理原始记录 · 2026-09-28
+
+设备：vivo V2323A（iQOO Neo9 · Snapdragon 8 Gen 2 · 1×X3+4×A715/A710+3×A510）· Android 16 · arm64-v8a
+二进制：llama-cli-arm64（静态 aarch64-linux-ohos musl，7.9MB，qemu 已验证版，
+        -march=armv8.2a+fp16，GGML_TMAC=ON，staging-arm64 内核）
+模型：bitnet-3b-tmac-arm64.gguf（966MB / 2.44 BPW / arm64 kcfg 布局）
+运行：adb shell（Android 允许执行 /data/local/tmp —— 对比鸿蒙零售机被 SELinux 禁止）
+
+--- 首轮 t=4（冷机，完整日志见 android_e2e_run1.log）---
+system_info: NEON=1 | ARM_FMA=1 | FP16_VA=1 | MATMUL_INT8=1
+输出: "The capital of France is Paris. It is situated in the south-eastern part of
+       the country and is divided into three regions: Ile de France, Île-de-"
+load time   =  1459.80 ms
+prompt eval =   287.31 ms / 6 tokens ( 47.88 ms/tok,  20.88 tok/s)
+eval time   =  2683.94 ms / 31 runs  ( 86.58 ms/tok,  11.55 tok/s)   ← 峰值
+
+--- 线程扫描（eval tok/s，同会话连续运行，热降频递减）---
+threads=2 : 10.53
+threads=3 : 10.58
+threads=4 : 11.55（冷）/ 10.65（复测）
+threads=6 : 9.35
+threads=8 : 7.37
+
+线程规律：>4 线程被 A510 小核拖累（层内 barrier 被最慢线程锁死）；最优 4 线程。
+持续吞吐（热机）≈ 10.5~10.7 tok/s；冷机峰值 11.55。
+
+--- 跨平台对照（同一模型 bitnet-3b-tmac-arm64.gguf，同 -t 4）---
+| 平台 | SoC | eval tok/s | load |
+|---|---|---|---|
+| 鸿蒙真机 HBN-AL00 | Kirin | **18.62** | 1955 ms |
+| 安卓真机 vivo V2323A | SD 8 Gen 2 | 11.55 / ~10.6 持续 | 1460 ms |
+| 桌面 i7-14650HX (WSL) | x86 | 25.10 | 8200 ms |
+| 鸿蒙模拟器 (x86_64) | vCPU | 11.7~11.9 (CLI) | 1400~3700 ms |
+
+结论：
+1. 安卓端到端 T-MAC 推理首次打通，输出文本正确连贯 —— 当年"能跑不输出"的病灶
+   （数据契约层，docs/ANDROID-FIX.md）按本仓修复集使用后彻底根治。
+2. 同一静态二进制 + 同一模型横跨 鸿蒙/安卓/qemu 三环境可运行（musl 静态 +
+   armv8.2a+fp16 基线）——跨平台可移植性实证。
+3. 麒麟平台对 4 线程 LUT 负载明显快于 SD8G2（18.62 vs 11.55，+61%），
+   猜测与其内存子系统/调度亲和有关；SD8G2 的 3×A510 小核在 >4 线程时拖累严重。

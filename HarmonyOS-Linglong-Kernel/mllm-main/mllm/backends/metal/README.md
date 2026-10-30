@@ -1,3 +1,0 @@
-# Metal Backend
-
-MPS

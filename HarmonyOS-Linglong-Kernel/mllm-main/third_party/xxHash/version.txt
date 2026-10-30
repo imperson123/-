@@ -1,3 +1,0 @@
-0.8.3
-
-# The head file is modified from #include "xxhash.h" to #include "xxHash/xxhash.h"

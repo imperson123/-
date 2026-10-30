@@ -1,0 +1,25 @@
+{
+  "name": "@fandou/lut_sa",
+  "description": "LUT-SA -- 端侧低比特 LLM 推理系统服务（SystemAbility, SA_ID=6901）",
+  "version": "1.0.0",
+  "license": "MIT",
+  "publishAs": "code-segment",
+  "segment": { "destPath": "fandou/lut_sa" },
+  "component": {
+    "name": "lut_sa",
+    "subsystem": "fandou",
+    "syscap": [],
+    "features": [],
+    "adapted_system_type": [ "standard" ],
+    "rom": "4096KB",
+    "ram": "65536KB",
+    "deps": {
+      "components": [ "samgr", "ipc", "safwk", "c_utils", "hilog", "ability_base", "utils_base" ],
+      "third_party": [ "libtmac" ]
+    },
+    "build": {
+      "sub_component": [ "//fandou/lut_sa:lut_sa_package" ],
+      "test": []
+    }
+  }
+}

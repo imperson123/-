@@ -1,0 +1,11 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "LUT-SA entry module — NAPI bridge to the T-MAC LUT kernel",
+  "main": "",
+  "author": "fandou",
+  "license": "MIT",
+  "dependencies": {
+    "libtmac_hap.so": "file:./src/main/cpp/types/libtmac_hap"
+  }
+}

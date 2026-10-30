@@ -1,0 +1,8 @@
+interface OHOS.LutSa.ILutSa {
+  String NativeVersion();
+  void LoadModel([in] String path, [in] int threads, [in] int nCtx);
+  String Generate([in] String prompt, [in] int nPredict, [in] double temp, [in] int topK);
+  String GetMetrics();
+  String SelfTest();
+  String Release();
+}

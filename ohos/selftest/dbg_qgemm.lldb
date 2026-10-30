@@ -1,0 +1,8 @@
+settings set target.disable-aslr true
+b qgemm_lut_t1_int8_m128_k3200_n1_b2
+run
+expr void* $cc = (void*)$r9
+register read rdi rsi rdx rcx r8 r9
+finish
+memory read -f x -s 2 -c 8 $cc
+quit

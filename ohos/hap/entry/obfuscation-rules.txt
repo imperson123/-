@@ -1,0 +1,23 @@
+# Define project specific obfuscation rules here.
+# You can include the obfuscation configuration files in the current module's build-profile.json5.
+#
+# For more details, see
+#   https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation
+
+# Obfuscation options:
+# -disable-obfuscation: disable all obfuscations
+# -enable-property-obfuscation: obfuscate the property names
+# -enable-toplevel-obfuscation: obfuscate the names in the global scope
+# -enable-filename-obfuscation: obfuscate the file/folder names
+# -enable-export-obfuscation: obfuscate the names in the import/export syntax
+# -keep-property-name: keep the property names
+# -keep-file-name: keep the file names
+# -keep-global-name: keep the global names
+# -keep: keep the code
+
+# NOTE: this demo module loads libtmac_hap.so through NAPI; keep native-facing
+# symbols intact when obfuscation is enabled.
+-enable-property-obfuscation
+-enable-toplevel-obfuscation
+-enable-filename-obfuscation
+-enable-export-obfuscation
