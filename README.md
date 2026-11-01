@@ -90,8 +90,6 @@ Local inference result → streamed tokens
 | ARM64 集成 | NEON / FP16 目标架构与原生静态库 | 在目标 CPU 上运行相应内核 |
 | 原生推理封装 | GGUF 加载、上下文建立、流式生成 | 从单独算子转化为应用可调用的推理运行时 |
 
-> **研究归属：** LUT 基础算法来自 [T-MAC（EuroSys 2025）](https://doi.org/10.1145/3689031.3696099) 与 [Microsoft/T-MAC](https://github.com/microsoft/T-MAC)。本项目强调鸿蒙平台适配和系统整合，不将上游基础算法宣称为团队从零发明。历史 i2 对 FP16 倍率是完整部署方案的表现，而非同量化精度的内核消融。
-
 ### 03 · Token-level KV Cache Prefix Reuse
 
 连续请求可能共享相同 Token 前缀。原生推理上下文维护已缓存 Token 序列，收到新的 Prompt 时按 **Token ID** 而非字符串字符匹配最长公共前缀：命中部分保留对应 KV 状态；如旧缓存尾部与新请求不一致，则裁剪失效尾部；仅针对新增 Token 执行必要的 `llama_decode()`。
