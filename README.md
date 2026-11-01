@@ -34,6 +34,16 @@
 
 ---
 
+## Download · HarmonyOS HAP
+
+**Hongmeng LinglongCore v0.1.0-preview.1**
+
+[📦 Download HAP](https://github.com/imperson123/Hongmeng-LinglongCore/releases/download/v0.1.0-preview.1/HAP.hap) · [Release Notes](https://github.com/imperson123/Hongmeng-LinglongCore/releases/tag/v0.1.0-preview.1)
+
+> Preview build for compatible HarmonyOS devices.
+> Installation may depend on signing credentials and device authorization.
+> GGUF model weights are not included.
+
 ## Overview
 
 **鸿蒙玲珑核（Hongmeng Linglong Core）** 是一套面向 **HarmonyOS NEXT** 的原生端侧低比特大语言模型离线推理系统，旨在让兼容的大语言模型摆脱对云端推理 API 的依赖，直接在资源受限的鸿蒙移动设备上完成本地文本生成。
@@ -60,7 +70,7 @@
 | **1.69 s** | **22.00 tokens/s** | **6 / 6 tokens** | **≈ 1,299 MiB** |
 | Pura 70 Pro | 首轮本地生成 | 指定完全命中请求 | Pura X View 模拟器 A/B |
 
-> **实验口径说明：** 1.69 s、22.00 tokens/s 和 6/6 Token 复用来自 Pura 70 Pro 真机；约 1,299 MiB 的后台内存下降来自官方模拟器 A/B。上述数据属于不同实验，不应合并解释为同一次测试结果。
+> **实验口径说明：** 1.69 s、22.00 tokens/s 和 6/6 Token 复用来自 Pura 70 Pro 真机；约 1,299 MiB 的后台内存下降来自官方模拟器 A/B。上述数据属于不同实验。
 
 ---
 
